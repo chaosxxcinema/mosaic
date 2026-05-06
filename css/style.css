@@ -196,34 +196,29 @@ body{font-family:'DM Sans','Noto Sans TC',sans-serif;background:var(--bg);color:
 .nav-icon{width:21px;height:21px;border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0;background:color-mix(in srgb,var(--item-color,var(--glass-blue)) 14%,transparent);}
 .nav-count{margin-left:auto;font-family:'DM Mono',monospace;font-size:10px;color:var(--text-dim);background:var(--bg);border:1px solid var(--border);border-radius:999px;padding:1px 6px;}
 #count-guest{display:none;} /* Hide count for guest submissions */
-/* 特邀嘉賓專屬：粉色大按鈕 */
+/* ✦ 特邀嘉賓專屬：霸道粉色大按鈕 ✦ */
 .guest-submit-btn {
-  background: rgba(232, 58, 124, 0.1); 
-  border: 1px solid rgba(232, 58, 124, 0.3);
-  border-radius: 8px;
-  margin: 4px 14px 10px;
-  padding: 9px 12px;
-  color: var(--glass-pink);
-  font-weight: 600;
-  justify-content: center;
-  transition: all .18s;
+  background: rgba(232, 58, 124, 0.1) !important; 
+  border: 1px solid rgba(232, 58, 124, 0.3) !important;
+  border-radius: 8px !important;
+  margin: 4px 14px 10px !important;
+  padding: 9px 12px !important;
+  color: var(--glass-pink) !important;
+  font-weight: 600 !important;
+  justify-content: center !important;
 }
 .guest-submit-btn:hover {
-  background: rgba(232, 58, 124, 0.18);
-  border-color: rgba(232, 58, 124, 0.5);
+  background: rgba(232, 58, 124, 0.18) !important;
+  border-color: rgba(232, 58, 124, 0.5) !important;
   transform: translateY(-1px);
 }
 .guest-submit-btn.active {
-  background: var(--glass-pink);
-  color: #fff;
-  border-color: var(--glass-pink);
-}
-.guest-submit-btn .nav-icon {
-  background: transparent; 
-  font-size: 15px;
+  background: var(--glass-pink) !important;
+  color: #fff !important;
+  border-color: var(--glass-pink) !important;
 }
 .guest-submit-btn.active::before {
-  display: none; /* 隱藏原本 active 狀態左邊的那條豎線，讓它更像一個完整的按鈕 */
+  display: none !important; /* 強制隱藏左邊那條多餘的豎線 */
 }
 
 .sidebar-divider{height:1px;background:var(--border2);margin:6px 14px;}

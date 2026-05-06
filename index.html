@@ -56,11 +56,7 @@
 
 <!-- ── FILTER BAR ── -->
 <div class="filterbar">
-  <div class="search-wrap">
-    <input class="search-input" id="search-input" type="text" autocomplete="off">
-    <span class="search-icon" id="search-icon">🔍</span>
-    <button class="search-clear" id="search-clear">✕</button>
-  </div>
+  <!-- 日期與按鈕先出現 -->
   <div class="date-field">
     <span class="date-disp" id="disp-from">Jun 1, 2025</span>
     <input type="date" id="date-from" value="2025-06-01">
@@ -73,9 +69,11 @@
   <button class="btn-filter" id="btn-filter">Filter</button>
   <button class="btn-reset" id="btn-reset">Reset</button>
 
-  <div class="active-tag-badge" id="active-tag-badge">
-    <span id="atb-text"></span>
-    <button class="atb-clear" id="atb-clear">✕</button>
+  <!-- 搜索欄被搬到右邊來了！ -->
+  <div class="search-wrap">
+    <input class="search-input" id="search-input" type="text" autocomplete="off">
+    <span class="search-icon" id="search-icon">🔍</span>
+    <button class="search-clear" id="search-clear">✕</button>
   </div>
 </div>
 
@@ -146,10 +144,9 @@
       <!-- Guest Voices -->
       <div class="sidebar-section">
         <div class="sidebar-label"><span data-en="✍️ Guest Voices" data-zh="✍️ 特邀嘉賓">✍️ Guest Voices</span></div>
-        <div class="nav-item" data-cat="guest" style="--item-color:#e83a7c">
-          <div class="nav-icon" style="--item-color:#e83a7c">💬</div>
+        <div class="nav-item guest-submit-btn" data-cat="guest">
+          <div class="nav-icon">💬</div>
           <span class="nav-label" data-en="Submissions" data-zh="投稿專欄">Submissions</span>
-          <span class="nav-count" id="count-guest">—</span>
         </div>
         <div style="padding:8px 16px 10px;font-size:10.5px;color:var(--text-dim);line-height:1.75;">
           <span data-en="Share your story..." data-zh="與社群分享您的故事...">Share your story with the community.</span><br>
@@ -178,6 +175,11 @@
     <div class="content-header">
       <div class="content-title" id="content-title">All Sources</div>
       <div class="content-count" id="content-count">— items</div>
+      <!-- 👇 貼在這裡！讓它緊緊跟著文章數量 -->
+      <div class="active-tag-badge" id="active-tag-badge">
+        <span id="atb-text"></span>
+        <button class="atb-clear" id="atb-clear">✕</button>
+      </div>
       <div class="content-hint" id="content-hint">Click cards to expand · Click tags to filter</div>
     </div>
     <div class="cards-scroll">

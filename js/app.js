@@ -15,7 +15,7 @@ function filtered(){
   const atf=activeTagFilter.toLowerCase();
   return items.filter(it=>{
     if(activeCat!=='all'&&it.cat!==activeCat)return false;
-    if(activeCountry!=='all'&&it.cat!=='guest'&&it.country!==activeCountry)return false;
+    if(activeCountry!=='all'&&it.country!==activeCountry)return false;
     if(dateFrom&&it.date<dateFrom)return false;
     if(dateTo&&it.date>dateTo)return false;
     if(atf){
@@ -103,7 +103,6 @@ function renderCards(){
     if(!el)return;
     el.textContent=items.filter(it=>{
       if(cat!=='all'&&it.cat!==cat)return false;
-      if(activeCountry!=='all'&&it.country!==activeCountry)return false;
       if(dateFrom&&it.date<dateFrom)return false;
       if(dateTo&&it.date>dateTo)return false;
       return true;
@@ -226,28 +225,102 @@ function openPanel(it){
     tagsEl.parentNode.insertBefore(authorBox,tagsEl.nextSibling);
   }
   
-  document.getElementById('panel-full').textContent=it.full[lang];
+  // 👇 冷萃魔法：多語言「正文」標記
+  const mainTextLabels = {
+    en: '[Main Text]\n\n',
+    zh: '【正文】\n\n',
+    es: '[Texto Principal]\n\n',
+    ar: '[النص الرئيسي]\n\n',
+    ru: '[Основной текст]\n\n'
+  };
+  const bodyPrefix = mainTextLabels[lang] || mainTextLabels.en;
+  // 將 [正文] 與實際內容拼接在一起
+  const fullArticleText = bodyPrefix + it.full[lang];
   
-  let existingListenBtn=document.getElementById('panel-listen-btn');
-  if(existingListenBtn)existingListenBtn.remove();
+  const panelFull = document.getElementById('panel-full');
+  panelFull.textContent = fullArticleText;
   
+  // 👇 通用控制列（朗讀 + 字體大小）
+  let existingControls = document.getElementById('panel-controls');
+  if(existingControls) existingControls.remove();
+
+  const controls = document.createElement('div');
+  controls.id = 'panel-controls';
+  controls.className = 'panel-controls';
+  controls.style.display = 'flex';
+  controls.style.gap = '8px';
+  controls.style.marginBottom = '16px';
+  controls.style.alignItems = 'center';
+
   if(isGuest){
     const listenBtn=document.createElement('button');
     listenBtn.id='panel-listen-btn';
     listenBtn.className='panel-listen-btn';
+    listenBtn.style.marginBottom = '0'; 
     listenBtn.innerHTML=`<span id="listen-icon">🔊</span> <span id="listen-text">${lang==='zh'?'朗讀全文':'Listen to Article'}</span>`;
-    listenBtn.onclick=()=>toggleSpeech(it.full[lang],listenBtn);
-    document.getElementById('panel-full').parentNode.insertBefore(listenBtn,document.getElementById('panel-full'));
+    // 讓朗讀引擎連著 [正文] 兩個字一起唸，盲人體驗更好！
+    listenBtn.onclick=()=>toggleSpeech(fullArticleText, listenBtn); 
+    controls.appendChild(listenBtn);
   }
+
+  const fontGroup = document.createElement('div');
+  fontGroup.style.display = 'flex';
+  fontGroup.style.gap = '6px';
+  if(isGuest) fontGroup.style.marginLeft = 'auto'; 
   
-  const cta=document.getElementById('panel-cta');
+  fontGroup.innerHTML = `
+    <button id="font-decrease" class="font-btn" title="${lang==='zh'?'縮小字體':'Decrease Font Size'}">A-</button>
+    <button id="font-increase" class="font-btn" title="${lang==='zh'?'放大字體':'Increase Font Size'}">A+</button>
+  `;
+  controls.appendChild(fontGroup);
+
+  panelFull.parentNode.insertBefore(controls, panelFull);
+
+  // 👇 正文字體動態控制（基準改成 14.5）
+  let currentBaseSize = 14.5; 
+  panelFull.style.fontSize = currentBaseSize + 'px'; 
+  
+  document.getElementById('font-decrease').onclick = () => {
+    currentBaseSize = Math.max(12, currentBaseSize - 1.5); 
+    panelFull.style.fontSize = currentBaseSize + 'px';
+  };
+  
+  document.getElementById('font-increase').onclick = () => {
+    currentBaseSize = Math.min(28, currentBaseSize + 1.5); 
+    panelFull.style.fontSize = currentBaseSize + 'px';
+  };
+  // 👆 替換結束！
+  
+  // 👇 冷萃魔法：隱藏跳轉按鈕，換成首發時間戳（把它補回來！）
+  const cta = document.getElementById('panel-cta');
+  let existingPubTime = document.getElementById('panel-pub-time');
+  if(existingPubTime) existingPubTime.remove(); 
+
   if(isGuest){
-    cta.style.display='none';
-  }else{
-    cta.style.display='inline-flex';
-    cta.href=it.url;
-    document.getElementById('cta-text').textContent=lang==='zh'?'查看原文 →':'Read Original Article →';
+    // 特邀嘉賓：隱藏跳轉按鈕
+    cta.style.display = 'none';
+    
+    // 建立專屬的美式發佈時間（例如：Apr 30, 2026）
+    const pubTime = document.createElement('div');
+    pubTime.id = 'panel-pub-time';
+    pubTime.style.fontFamily = "'DM Mono', monospace";
+    pubTime.style.fontSize = '12px';
+    pubTime.style.color = 'var(--text-dim)';
+    pubTime.style.marginTop = '28px'; 
+    pubTime.style.marginBottom = '8px';
+    pubTime.style.textAlign = 'right'; 
+    pubTime.style.letterSpacing = '0.04em';
+    pubTime.innerHTML = (lang === 'zh' ? '✦ 發佈時間：' : '✦ Published: ') + fmtDate(it.date);
+    
+    // 把時間插在按鈕原本的位置
+    cta.parentNode.insertBefore(pubTime, cta);
+  } else {
+    // 一般新聞：顯示跳轉按鈕
+    cta.style.display = 'inline-flex';
+    cta.href = it.url;
+    document.getElementById('cta-text').textContent = (lang === 'zh' ? '查看原文 →' : 'Read Original Article →');
   }
+  // 👆 首發時間戳補回結束！
   
   let existingDisclaimer=document.getElementById('panel-guest-disclaimer');
   if(existingDisclaimer)existingDisclaimer.remove();
@@ -301,27 +374,36 @@ function toggleSpeech(text,btn){
   const icon=document.getElementById('listen-icon');
   const btnText=document.getElementById('listen-text');
   
-  if(currentSpeech&&!window.speechSynthesis.paused){
+  // 👇 冷萃魔法：不相信瀏覽器，我們看自己的圖標和按鈕狀態最準！
+  const isPlaying = btn.classList.contains('playing');
+  const isPaused = icon.textContent === '▶️';
+
+  if(isPlaying){
+    // 正在播放，按下後暫停
     window.speechSynthesis.pause();
     icon.textContent='▶️';
     btnText.textContent=lang==='zh'?'繼續播放':'Resume';
     btn.classList.remove('playing');
-  }else if(currentSpeech&&window.speechSynthesis.paused){
+  } else if(isPaused && currentSpeech){
+    // 處於暫停狀態，按下後繼續
     window.speechSynthesis.resume();
     icon.textContent='⏸';
     btnText.textContent=lang==='zh'?'暫停':'Pause';
     btn.classList.add('playing');
-  }else{
-    if(currentSpeech) window.speechSynthesis.cancel();
+  } else {
+    // 全新播放
+    window.speechSynthesis.cancel();
     currentSpeech=new SpeechSynthesisUtterance(text);
     currentSpeech.lang=lang==='zh'?'zh-TW':'en-US';
     currentSpeech.rate=0.9;
+    
     currentSpeech.onend=()=>{
       currentSpeech=null;
       icon.textContent='🔊';
       btnText.textContent=lang==='zh'?'朗讀全文':'Listen to Article';
       btn.classList.remove('playing');
     };
+    
     window.speechSynthesis.speak(currentSpeech);
     icon.textContent='⏸';
     btnText.textContent=lang==='zh'?'暫停':'Pause';
@@ -348,27 +430,44 @@ document.querySelector('.main').addEventListener('click',()=>{
   if(sidebar.classList.contains('open')) sidebar.classList.remove('open');
 });
 
-// ── SIDEBAR NAV ──
+/// ── SIDEBAR NAV ──
 const catTitles={en:{all:'All Sources',news:'News',events:'Events',legal:'Legal Aid',health:'Health & Medical',guest:'Guest Voices'},zh:{all:'全部來源',news:'新聞',events:'活動',legal:'法律援助',health:'醫療援助',guest:'特邀嘉賓'}};
 function updateTitle(){document.getElementById('content-title').textContent=catTitles[lang][activeCat]||'All';}
 
 document.querySelectorAll('.nav-item').forEach(el=>{
   el.addEventListener('click',()=>{
     activeCat=el.dataset.cat;
+    
+    // 👇 冷萃魔法 1：點擊「分類」時，強行把「地區」重置為全部，並把地區按鈕的亮光切換回去
+    activeCountry='all';
+    document.querySelectorAll('.country-item').forEach(n=>n.classList.remove('active'));
+    document.querySelector('.country-item[data-country="all"]').classList.add('active');
+
     document.querySelectorAll('.nav-item').forEach(n=>n.classList.remove('active'));
     el.classList.add('active');
     resetPagination();
     updateTitle();renderCards();
+    // 👇 更新標題後，呼叫清理標籤的魔法！
+    // (因為 clearTagFilter() 裡面已經包含了 resetPagination 和 renderCards，所以我們不需要再重複寫那兩句了)
+    updateTitle();
+    clearTagFilter(); 
     if(window.innerWidth<=700)document.getElementById('sidebar').classList.remove('open');
   });
 });
+
 document.querySelectorAll('.country-item').forEach(el=>{
   el.addEventListener('click',()=>{
     activeCountry=el.dataset.country;
+    
+    // 👇 冷萃魔法 2：點擊「地區」時，強行把「分類」重置為全部，並熄滅分類按鈕的亮光
+    activeCat='all';
+    document.querySelectorAll('.nav-item').forEach(n=>n.classList.remove('active'));
+
     document.querySelectorAll('.country-item').forEach(n=>n.classList.remove('active'));
     el.classList.add('active');
-    resetPagination();
-    renderCards();
+    // 👇 同樣在這裡加上清理標籤！
+    updateTitle();
+    clearTagFilter(); 
     if(window.innerWidth<=700)document.getElementById('sidebar').classList.remove('open');
   });
 });
@@ -510,6 +609,12 @@ let touchEndX = 0;
 const sidebar = document.getElementById('sidebar');
 
 function handleSwipe() {
+  // 👇 冷萃防護罩：如果文章面板(overlay)或免責聲明(disc-overlay)開著，就取消滑動側邊欄的功能！
+  if (document.getElementById('overlay').classList.contains('open') || 
+      document.getElementById('disc-overlay').classList.contains('open')) {
+    return;
+  }
+
   const swipeDistance = touchEndX - touchStartX;
   const minSwipeDistance = 50; 
   if (Math.abs(swipeDistance) > minSwipeDistance) {
@@ -727,6 +832,22 @@ function updateRecipeTitle(pageNum) {
 
 panicBtn.addEventListener('click', e => {
   e.stopPropagation();
+
+  // 👇 冷萃魔法：一鍵閉嘴防護機制
+  if (window.speechSynthesis) {
+    window.speechSynthesis.cancel();
+  }
+  currentSpeech = null;
+  const listenBtn = document.getElementById('panel-listen-btn');
+  if (listenBtn) {
+    listenBtn.classList.remove('playing');
+    const icon = document.getElementById('listen-icon');
+    const btnText = document.getElementById('listen-text');
+    if (icon) icon.textContent = '🔊';
+    if (btnText) btnText.textContent = (lang === 'zh' ? '朗讀全文' : 'Listen to Article');
+  }
+  // 👆 閉嘴防護機制結束
+
   if(disguisePage.classList.contains('active')){
     disguisePage.classList.remove('active');
     currentRecipePage = 0;

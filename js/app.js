@@ -364,8 +364,21 @@ function openPanel(it){
     panelBody.appendChild(disclaimer);
     panelBody.appendChild(copyright);
     panelBody.appendChild(comments);
+    
+  } else {
+    // 👇 冷萃魔法：一般新聞的專屬免責聲明！
+    const generalDisclaimer = document.createElement('div');
+    generalDisclaimer.id = 'panel-guest-disclaimer'; // 共用這個ID，這樣每次關閉重開都會自動清理
+    generalDisclaimer.className = 'panel-guest-disclaimer';
+    generalDisclaimer.innerHTML = lang === 'zh' ? 
+      '<strong>⚠️ 免責聲明</strong><br>本文內容均自動抓取自公開的第三方媒體平台。內容僅代表原出版方及作者立場，與 Mosaic 網站及本站製作者無關。' : 
+      '<strong>⚠️ Disclaimer</strong><br>This article is sourced from public third-party media platforms. The content represents the views of the original publishers/authors, and is not affiliated with or endorsed by Mosaic or its creator.';
+    
+    const panelBody = document.getElementById('panel-full').parentNode;
+    panelBody.appendChild(generalDisclaimer);
   }
   
+
   overlay.classList.add('open');
 }
 

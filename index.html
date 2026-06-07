@@ -1,243 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mosaic — LGBTQ+ Global News</title>
-<!-- 引入字體 -->
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
-<!-- 🌟 重點：這裡呼叫了我們分離出來的 CSS 檔案 -->
-<link rel="stylesheet" href="./css/style.css">
+<title>Mosaic — 為那些在黑暗中搜索的人</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700;900&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/landing.css">
 </head>
 <body>
 
-<!-- ── TOPBAR — newspaper header ── -->
-<div class="topbar">
-  <button class="sidebar-toggle" id="sidebar-toggle">☰</button>
+<div class="noise"></div>
 
-  <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
-    <div class="logo-mark">
-      <div class="shard"></div><div class="shard"></div><div class="shard"></div>
-      <div class="shard"></div><div class="shard"></div><div class="shard"></div>
-    </div>
-    <div class="logo-text">Mosaic</div>
-  </div>
-
-  <div class="newspaper-meta">
-    <div class="newspaper-date" id="newspaper-date">Loading…</div>
-    <div class="newspaper-tagline" id="newspaper-tagline">LGBTQ+ Global News & Resources</div>
-  </div>
-
-  <div class="weather-badge" id="weather-badge" style="display:none">
-    <span class="weather-icon" id="weather-icon">🌤</span>
-    <span id="weather-text">—</span>
-  </div>
-
-  <div class="lang-toggle">
-    <select id="lang-select" style="padding:4px 8px;border-radius:6px;border:1px solid var(--border);background:var(--surface);color:var(--text);font-size:11px;font-weight:600;cursor:pointer;">
-      <option value="en" selected>EN</option>
-      <option value="zh">繁中</option>
-      <option value="es">ES</option>
-      <option value="ar">AR</option>
-      <option value="ru">RU</option>
+<!-- ── 頂部導航 ── -->
+<nav class="topnav">
+  <a class="logo" href="index.html">
+    <div class="logo-mark"></div>
+    <span>Mosaic</span>
+  </a>
+  <div class="nav-actions">
+    <a class="nav-link-archive" href="archive.html" data-i18n="nav_archive">檔案庫</a>
+    <a class="nav-link-tools"   href="archive.html#safety" data-i18n="nav_tools">生存工具</a>
+    <a class="nav-link-guest"   href="archive.html#guest" data-i18n="nav_guest">特邀嘉賓</a>
+    <select class="lang-toggle" id="lang-select" onchange="switchLang(this.value)">
+      <option value="zh" selected>繁中</option>
+      <option value="zh-cn">简中</option>
+      <option value="en">EN</option>
     </select>
   </div>
-</div>
+</nav>
 
-<!-- ── QUOTE BAR ── -->
-<div class="quote-bar">
-  <span class="quote-text" id="quote-text"></span>
-</div>
-
-<!-- ── EMERGENCY ESCAPE GUIDE ── -->
-<div style="background:rgba(232,58,60,0.08);border-bottom:1px solid rgba(232,58,60,0.15);padding:6px 18px;font-size:10px;color:var(--text-mid);text-align:center;line-height:1.6;">
-  <span data-en="🍖 Emergency: Click icon to activate. Click again to return." data-zh="🍖 緊急逃生：點擊圖標啟動，再次點擊可返回。">🍖 緊急逃生：點擊圖標啟動，再次點擊可返回。</span>
-</div>
-
-<!-- ── FILTER BAR ── -->
-<div class="filterbar">
-  <!-- 日期與按鈕先出現 -->
-  <div class="date-field">
-    <span class="date-disp" id="disp-from">Jun 1, 2025</span>
-    <input type="date" id="date-from" value="2025-06-01">
+<!-- ── Hero ── -->
+<section class="hero">
+  <div class="hero-eyebrow" data-i18n="eyebrow">一份活著的檔案 · 2026</div>
+  <h1 class="hero-title">
+    <span data-i18n-html="title_line1">在時間的樹下，<br></span><span class="accent" data-i18n="title_accent">每一片葉子都是一次抗爭。</span>
+  </h1>
+  <p class="hero-subtitle" data-i18n="subtitle">華語 LGBTQ+ 的記憶、現實與未來。</p>
+  <div class="hero-quote" data-i18n="quote">
+    給那些躲在被窩裡，關掉燈，戴上耳機才敢搜索 "gay" 這個詞的人
   </div>
-  <span class="date-arrow">→</span>
-  <div class="date-field">
-    <span class="date-disp" id="disp-to">May 1, 2026</span>
-    <input type="date" id="date-to" value="2026-05-01">
+  <div class="scroll-hint">
+    <span data-i18n="scroll">SCROLL · 順流而下</span>
+    <div class="scroll-arrow"></div>
   </div>
-  <button class="btn-filter" id="btn-filter">Filter</button>
-  <button class="btn-reset" id="btn-reset">Reset</button>
+</section>
 
-  <!-- 搜索欄被搬到右邊來了！ -->
-  <div class="search-wrap">
-    <input class="search-input" id="search-input" type="text" autocomplete="off">
-    <span class="search-icon" id="search-icon">🔍</span>
-    <button class="search-clear" id="search-clear">✕</button>
-  </div>
-</div>
+<!-- ── 時間之樹 ── -->
+<section class="tree-container" id="tree">
 
-<!-- ── LAYOUT ── -->
-<div class="layout">
+  <svg class="tree-trunk-svg" preserveAspectRatio="none" viewBox="0 0 4 100">
+    <defs>
+      <linearGradient id="trunk-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%"   stop-color="#ff6b35"/>
+        <stop offset="20%"  stop-color="#f7931e"/>
+        <stop offset="50%"  stop-color="#c45ab8"/>
+        <stop offset="80%"  stop-color="#6b6bd6"/>
+        <stop offset="100%" stop-color="#2a4a8c"/>
+      </linearGradient>
+    </defs>
+    <rect x="0" y="0" width="4" height="100" fill="url(#trunk-gradient)"/>
+  </svg>
 
-  <!-- SIDEBAR -->
-  <div class="sidebar" id="sidebar">
-    <div class="sidebar-top">
+  <!-- 節點由 JS 渲染 -->
+  <div id="tree-nodes"></div>
 
-      <div class="sidebar-section">
-        <div class="sidebar-label" id="lbl-categories">Categories</div>
-        <div class="nav-item active" data-cat="news" style="--item-color:#e8463a">
-          <div class="nav-icon" style="--item-color:#e8463a">📰</div>
-          <span class="nav-label" data-en="News" data-zh="新聞">News</span>
-          <span class="nav-count" id="count-news">—</span>
-        </div>
-        <div class="nav-item" data-cat="cases" style="--item-color:#8a3ae8">
-          <div class="nav-icon" style="--item-color:#8a3ae8">⚖️</div>
-          <span class="nav-label" data-en="Historic Cases" data-zh="歷史案件">Historic Cases</span>
-          <span class="nav-count" id="count-cases">—</span>
-        </div>
-        <div class="nav-item" data-cat="legal" style="--item-color:#7a4bcc">
-          <div class="nav-icon" style="--item-color:#7a4bcc">🏛️</div>
-          <span class="nav-label" data-en="Legal Aid" data-zh="法律援助">Legal Aid</span>
-          <span class="nav-count" id="count-legal">—</span>
-        </div>
-        <div class="nav-item" data-cat="health" style="--item-color:#3a9e5f">
-          <div class="nav-icon" style="--item-color:#3a9e5f">🏥</div>
-          <span class="nav-label" data-en="Health" data-zh="醫療援助">Health</span>
-          <span class="nav-count" id="count-health">—</span>
-        </div>
-        <div class="nav-item" data-cat="toolkit" style="--item-color:#f5c842">
-          <div class="nav-icon" style="--item-color:#f5c842">🧰</div>
-          <span class="nav-label" data-en="Survival Toolkit" data-zh="生存錦囊">Survival Toolkit</span>
-          <span class="nav-count" id="count-toolkit">—</span>
-        </div>
-        <div class="nav-item" data-cat="vpn" style="--item-color:#3ab8c8">
-          <div class="nav-icon" style="--item-color:#3ab8c8">🔒</div>
-          <span class="nav-label" data-en="VPN Guide" data-zh="VPN 科普">VPN Guide</span>
-          <span class="nav-count" id="count-vpn">—</span>
-        </div>
-      </div>
-
-      <div class="sidebar-divider"></div>
-
-      <div class="sidebar-section">
-        <div class="sidebar-label" id="lbl-regions">Regions</div>
-        <div class="country-item active" data-country="all">
-          <span class="flag">🌐</span>
-          <span class="nav-label" data-en="Global" data-zh="全球">Global</span>
-        </div>
-        <div class="country-item" data-country="ca"><span class="flag">🇨🇦</span><span class="nav-label" data-en="Canada 🟢" data-zh="加拿大 🟢">Canada 🟢</span></div>
-        <div class="country-item" data-country="nl"><span class="flag">🇳🇱</span><span class="nav-label" data-en="Netherlands 🟢" data-zh="荷蘭 🟢">Netherlands 🟢</span></div>
-        <div class="country-item" data-country="is"><span class="flag">🇮🇸</span><span class="nav-label" data-en="Iceland 🟢" data-zh="冰島 🟢">Iceland 🟢</span></div>
-        <div class="country-item" data-country="tw"><span class="flag">🇹🇼</span><span class="nav-label" data-en="Taiwan 🟢" data-zh="台灣 🟢">Taiwan 🟢</span></div>
-        <div class="country-item" data-country="us"><span class="flag">🇺🇸</span><span class="nav-label" data-en="United States 🟡" data-zh="美國 🟡">United States 🟡</span></div>
-        <div class="country-item" data-country="gb"><span class="flag">🇬🇧</span><span class="nav-label" data-en="United Kingdom 🟡" data-zh="英國 🟡">United Kingdom 🟡</span></div>
-        <div class="country-item" data-country="cn"><span class="flag">🇨🇳</span><span class="nav-label" data-en="China 🔴" data-zh="中國 🔴">China 🔴</span></div>
-        <div class="country-item" data-country="ru"><span class="flag">🇷🇺</span><span class="nav-label" data-en="Russia 🔴" data-zh="俄羅斯 🔴">Russia 🔴</span></div>
-        <div class="country-item" data-country="ir"><span class="flag">🇮🇷</span><span class="nav-label" data-en="Iran 🔴" data-zh="伊朗 🔴">Iran 🔴</span></div>
-        <div class="country-item" data-country="ug"><span class="flag">🇺🇬</span><span class="nav-label" data-en="Uganda 🔴" data-zh="烏干達 🔴">Uganda 🔴</span></div>
-        <div class="country-item" data-country="sa"><span class="flag">🇸🇦</span><span class="nav-label" data-en="Saudi Arabia 🔴" data-zh="沙烏地阿拉伯 🔴">Saudi Arabia 🔴</span></div>
-      </div>
-
-      <div class="sidebar-divider"></div>
-
-      <!-- Guest Voices -->
-      <div class="sidebar-section">
-        <div class="sidebar-label"><span data-en="✍️ Guest Voices" data-zh="✍️ 特邀嘉賓">✍️ Guest Voices</span></div>
-        <div class="nav-item guest-submit-btn" data-cat="guest">
-          <div class="nav-icon">💬</div>
-          <span class="nav-label" data-en="Submissions" data-zh="投稿專欄">Submissions</span>
-        </div>
-        <div style="padding:8px 16px 10px;font-size:10.5px;color:var(--text-dim);line-height:1.75;">
-          <span data-en="Share your story..." data-zh="與社群分享您的故事...">Share your story with the community.</span><br>
-          <div style="margin-top:6px;padding:6px 10px;background:var(--bg);border:1px solid var(--border);border-radius:6px;font-family:monospace;font-size:11px;color:var(--text);cursor:pointer;" onclick="navigator.clipboard.writeText('chaosxxcinema@outlook.com').then(()=>alert('Email copied!'))">chaosxxcinema@outlook.com</div>
-        </div>
-      </div>
-
-      <div class="sidebar-divider"></div>
-      <div class="sidebar-section">
-        <div class="sidebar-label" id="lbl-sources">Sources</div>
-        <div class="sources-text">PinkNews · The Advocate<br>LGBTQ Nation · Lambda Legal<br>端傳媒 · 自由亞洲電台</div>
-      </div>
+  <!-- 樹根 CTA -->
+  <div class="tree-root">
+    <div class="tree-root-text" data-i18n="root_text">
+      時間之樹仍在生長。<br>還有更多事件、更多名字、更多記憶，等待被寫入。
     </div>
-
-    <div class="sidebar-bottom">
-      <a class="sb-kofi" href="https://ko-fi.com/chaosxxcinema" target="_blank" rel="noopener">☕ <span id="kofi-label">Buy me a coffee</span></a>
-      <button class="sb-link" id="sb-about" onclick="document.getElementById('disc-overlay').classList.add('open')" style="width:100%;padding:6px;">
-        <span data-en="ℹ️ About & Contact" data-zh="ℹ️ 關於與聯繫">ℹ️ About & Contact</span>
-      </button>
-      <div class="sb-credit">XiaXia · ChaosXX™ © 2026</div>
-    </div>
+    <a class="tree-root-cta" href="archive.html" data-i18n="root_cta">進入完整檔案庫</a>
   </div>
 
-  <!-- MAIN -->
-  <div class="main">
-    <div class="content-header">
-      <div class="content-title" id="content-title">All Sources</div>
-      <div class="content-count" id="content-count">— items</div>
-      <!-- 👇 貼在這裡！讓它緊緊跟著文章數量 -->
-      <div class="active-tag-badge" id="active-tag-badge">
-        <span id="atb-text"></span>
-        <button class="atb-clear" id="atb-clear">✕</button>
-      </div>
-      <div class="content-hint" id="content-hint">Click cards to expand · Click tags to filter</div>
-    </div>
-    <div class="cards-scroll">
-      <div id="cards-grid"></div>
-      <div class="empty" id="empty-state">No results found 🌈</div>
-    </div>
-  </div>
-</div>
+</section>
 
-<!-- OVERLAYS (Detail & Disclaimer) -->
-<div class="overlay" id="overlay">
-  <div class="detail-panel" id="detail-panel">
-    <div class="panel-header">
-      <div class="panel-strip" id="panel-strip"></div>
-      <div style="flex:1;min-width:0">
-        <div class="panel-source-date" id="panel-src"></div>
-        <div class="panel-title" id="panel-title"></div>
-      </div>
-      <button class="panel-close" id="panel-close">✕</button>
-    </div>
-    <div class="panel-body">
-      <div class="panel-summary-box" id="panel-summary-box">
-        <div class="panel-summary-label" id="lbl-ai">✦ AI Summary</div>
-        <div class="panel-summary-text" id="panel-summary"></div>
-      </div>
-      <div class="panel-tags" id="panel-tags"></div>
-      <div class="panel-full-text" id="panel-full"></div>
-      <a class="panel-cta" id="panel-cta" href="#" target="_blank">→ <span id="cta-text">Read Original Article</span></a>
-    </div>
-  </div>
-</div>
+<!-- ── 🍖 逃生按鈕 ── -->
+<button class="panic-button" id="panic-btn" aria-label="Emergency exit">🍖</button>
 
-<div class="disc-overlay" id="disc-overlay">
-  <div class="disc-modal">
-    <button class="disc-close" onclick="document.getElementById('disc-overlay').classList.remove('open')">✕</button>
-    <div class="disc-title" id="disc-title">⚠️ Disclaimer</div>
-  
-    <div class="disc-sec-title" id="disc-s1">About This Tool</div>
-    <div class="disc-body" id="disc-b1">...</div>
-  
-    <div class="disc-sec-title" id="disc-s2">AI Summary Notice</div>
-    <div class="disc-body" id="disc-b2">...</div>
-  
-    <div class="disc-sec-title" id="disc-s3">Privacy & Data</div>
-    <div class="disc-body" id="disc-b3">...</div>
-  
-    <div class="disc-sec-title" id="disc-s4">User Responsibility</div>
-    <div class="disc-body" id="disc-b4">...</div>
-  
-    <div class="disc-divider"></div>
-    <div class="disc-sec-title" id="disc-s5">Maintainer</div>
-    <div class="disc-body" id="disc-b5">XiaXia · ChaosXX™ · © 2026</div>
-  </div>
-</div>
-
-<!-- 緊急逃生按鈕與偽裝頁面 -->
-<div class="panic-button" id="panic-btn">🍖</div>
-
+<!-- ── 偽裝頁面（食譜） ── -->
 <div class="disguise-page" id="disguise-page">
   <div class="disguise-content">
     <div class="disguise-header">
@@ -245,23 +85,36 @@
       <div class="disguise-subtitle">www.meishichina.com</div>
     </div>
     <div class="disguise-recipe">
-      <div class="disguise-recipe-img" id="recipe-icon">🍽️</div>
+      <div class="disguise-recipe-img"   id="recipe-icon">🍽️</div>
       <div class="disguise-recipe-title" id="recipe-name">菜名</div>
-      <div class="disguise-recipe-meta" id="recipe-meta">難度：中等 | 時間：30分鐘</div>
-      <div class="disguise-recipe-section"><h3 id="label-ingredients">主料</h3><ul id="recipe-ingredients"></ul></div>
-      <div class="disguise-recipe-section"><h3 id="label-seasonings">調料</h3><ul id="recipe-seasonings"></ul></div>
-      <div class="disguise-recipe-section"><h3 id="label-steps">做法</h3><div id="recipe-steps"></div></div>
-      <div class="disguise-recipe-section"><p id="recipe-tips" style="color:#999;font-size:12px;"></p></div>
+      <div class="disguise-recipe-meta"  id="recipe-meta">難度：中等 | 時間：30分鐘</div>
+      <div class="disguise-recipe-section">
+        <h3 id="label-ingredients">主料</h3>
+        <ul id="recipe-ingredients"></ul>
+      </div>
+      <div class="disguise-recipe-section">
+        <h3 id="label-seasonings">調料</h3>
+        <ul id="recipe-seasonings"></ul>
+      </div>
+      <div class="disguise-recipe-section">
+        <h3 id="label-steps">做法步驟</h3>
+        <div id="recipe-steps"></div>
+      </div>
+      <div class="disguise-recipe-section">
+        <p id="recipe-tips" style="color:#999;font-size:12px;"></p>
+      </div>
     </div>
     <div style="text-align:center;padding:30px 0;border-top:1px solid #eee;color:#999;font-size:12px;">
-      <p id="recipe-footer">© 2026 美食天下</p>
+      <p id="recipe-footer">© 2026 美食天下 meishichina.com | 更多菜譜請訪問首頁</p>
       <p id="recipe-categories" style="margin-top:8px;">熱門分類：川菜 | 粵菜 | 湘菜 | 素菜 | 湯羹 | 烘焙</p>
     </div>
   </div>
 </div>
 
-<!-- 🌟 重點：先加載數據檔案，再加載邏輯腳本檔案 -->
-<script src="./data/data.js"></script>
-<script src="./js/app.js"></script>
+<!-- ══════════════════════════════════════
+     JAVASCRIPT
+     ══════════════════════════════════════ -->
+<script src="data/timeline.js"></script>
+<script src="js/landing.js"></script>
 </body>
 </html>

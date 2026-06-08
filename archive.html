@@ -82,6 +82,17 @@
       </div>
       <div class="sidebar-divider"></div>
       <div class="sidebar-section">
+        <div class="nav-item" data-cat="medical" id="nav-medical" style="--item-color:var(--glass-green)">
+          <div class="nav-icon" style="--item-color:var(--glass-green)">🏥</div><span id="lb-medical">醫療援助</span><span class="nav-count" id="count-medical">—</span>
+        </div>
+        <div class="sub-group" id="sub-medical">
+          <div class="sub-item" data-sub="providers" id="subnav-md-providers">友善醫療提供者</div>
+          <div class="sub-item" data-sub="trans" id="subnav-md-trans">跨性別醫療</div>
+          <div class="sub-item" data-sub="sexual" id="subnav-md-sexual">性健康 · HIV · PrEP</div>
+        </div>
+      </div>
+      <div class="sidebar-divider"></div>
+      <div class="sidebar-section">
         <div class="nav-item" data-cat="safety" id="nav-safety" style="--item-color:var(--glass-teal)">
           <div class="nav-icon" style="--item-color:var(--glass-teal)">🔒</div><span id="lb-safety">安全工具</span><span class="nav-count" id="count-safety">—</span>
         </div>
@@ -175,7 +186,13 @@
     </div>
   </div>
 </div>
-<script src="data/articles.js"></script>
+<!-- 參考資料(穩定型) -->
+<script src="data/reference.js"></script>
+<!-- 新聞歸檔設定 -->
+<script src="data/news-index.js"></script>
+<!-- 新聞檔案(每季一個,新增一季就加一行) -->
+<script src="data/news-2026-Q2.js"></script>
+<!-- 應用邏輯 -->
 <script src="js/archive.js"></script>
 </body>
 </html>

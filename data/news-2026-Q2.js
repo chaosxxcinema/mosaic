@@ -47,7 +47,8 @@ window.newsData = (window.newsData || []).concat([
       }
     ],
     "color": "var(--glass-red)",
-    "url": "https://lgbtqnation.com"
+    "url": "https://lgbtqnation.com",
+    "sub": "global"
   },
   {
     "id": 2,
@@ -95,7 +96,8 @@ window.newsData = (window.newsData || []).concat([
       }
     ],
     "color": "var(--glass-red)",
-    "url": "https://advocate.com"
+    "url": "https://advocate.com",
+    "sub": "global"
   },
   {
     "id": 3,
@@ -143,7 +145,8 @@ window.newsData = (window.newsData || []).concat([
       }
     ],
     "color": "var(--glass-orange)",
-    "url": "https://rfa.org"
+    "url": "https://rfa.org",
+    "sub": "zh-sphere"
   },
   {
     "id": 4,
@@ -184,7 +187,8 @@ window.newsData = (window.newsData || []).concat([
       }
     ],
     "color": "var(--glass-orange)",
-    "url": "https://theinitium.com"
+    "url": "https://theinitium.com",
+    "sub": "zh-sphere"
   },
   {
     "id": 5,

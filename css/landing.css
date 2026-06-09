@@ -53,23 +53,34 @@ body::before {
 }
 
 .logo {
-  font-family:'Noto Serif TC',serif; font-weight:900; font-size:22px;
+  font-family:'DM Sans',sans-serif; font-weight:800; font-size:22px;
   letter-spacing:-0.02em; display:flex; align-items:center; gap:10px;
   text-decoration:none; color:var(--text);
 }
 
-/* Logo 漸層方塊（與 archive.html 統一） */
+/* Logo 條狀玻璃（與 archive.html 統一） */
 .logo-mark {
-  width:28px; height:28px;
-  background:linear-gradient(135deg, var(--color-now), var(--color-mid), var(--color-ancient));
-  border-radius:6px; position:relative; overflow:hidden; flex-shrink:0;
+  display:flex; align-items:flex-end; gap:2px; flex-shrink:0; height:26px;
 }
-.logo-mark::after {
-  content:'';
-  position:absolute; inset:0;
-  background:
-    linear-gradient(90deg, transparent 33%, rgba(255,255,255,.3) 33%, rgba(255,255,255,.3) 34%, transparent 34%),
-    linear-gradient(0deg,  transparent 33%, rgba(255,255,255,.3) 33%, rgba(255,255,255,.3) 34%, transparent 34%);
+.shard {
+  width:5px; border-radius:1px; transform-origin:bottom center;
+  position:relative; overflow:hidden;
+}
+.shard::after {
+  content:''; position:absolute; inset:0;
+  background:linear-gradient(135deg,transparent 0%,rgba(255,255,255,.5) 45%,rgba(255,255,255,.9) 50%,rgba(255,255,255,.5) 55%,transparent 100%);
+  transform:translateX(-150%); animation:sunlight 12s ease-in-out infinite;
+}
+.shard:nth-child(1){ height:16px; background:#e8463a; }
+.shard:nth-child(2){ height:21px; background:#f07c3a; } .shard:nth-child(2)::after{ animation-delay:.4s; }
+.shard:nth-child(3){ height:26px; background:#f5c842; } .shard:nth-child(3)::after{ animation-delay:.8s; }
+.shard:nth-child(4){ height:23px; background:#3a9e5f; } .shard:nth-child(4)::after{ animation-delay:1.2s; }
+.shard:nth-child(5){ height:18px; background:#3a6fe8; } .shard:nth-child(5)::after{ animation-delay:1.6s; }
+.shard:nth-child(6){ height:13px; background:#8a3ae8; } .shard:nth-child(6)::after{ animation-delay:2s; }
+@keyframes sunlight {
+  0%{ transform:translateX(-150%); }
+  15%{ transform:translateX(150%); }
+  100%{ transform:translateX(150%); }
 }
 
 .nav-actions {

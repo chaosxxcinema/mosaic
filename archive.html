@@ -10,17 +10,18 @@
 <body>
 <div class="topbar">
   <button class="sidebar-toggle" id="sidebar-toggle">☰</button>
-  <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+  <a class="logo-link" href="index.html">
     <div class="logo-mark"><div class="shard"></div><div class="shard"></div><div class="shard"></div><div class="shard"></div><div class="shard"></div><div class="shard"></div></div>
-    <a class="logo-text" href="index.html">Mosaic</a>
-  </div>
+    <span class="logo-text">Mosaic</span>
+  </a>
   <div class="newspaper-meta">
-    <div class="newspaper-date" id="newspaper-date">—</div>
-    <div class="newspaper-tagline" id="newspaper-tagline">信息 · 保護 · 出路 · 記錄</div>
+    <span class="newspaper-date" id="newspaper-date">—</span>
+    <span class="meta-sep" id="newspaper-tagline">信息 · 保護 · 出路 · 記錄</span>
+    <span class="meta-divider">|</span>
+    <span class="quote-text" id="quote-text"></span>
   </div>
   <select class="lang-select" id="lang-select"><option value="zh" selected>繁中</option><option value="zh-cn">简中</option><option value="en">EN</option></select>
 </div>
-<div class="quote-bar"><span class="quote-text" id="quote-text"></span></div>
 <div class="panic-hint-bar" id="panic-hint-bar">🍖 緊急逃生：點擊右下角圖標啟動，再次點擊可返回。</div>
 <div class="filterbar">
   <div class="date-field"><span class="date-disp" id="disp-from">Jun 1, 2025</span><input type="date" id="date-from" value="2025-06-01"></div>

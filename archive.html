@@ -9,7 +9,6 @@
 </head>
 <body>
 <div class="topbar">
-  <button class="sidebar-toggle" id="sidebar-toggle">☰</button>
   <a class="logo-link" href="index.html">
     <div class="logo-mark"><div class="shard"></div><div class="shard"></div><div class="shard"></div><div class="shard"></div><div class="shard"></div><div class="shard"></div></div>
     <span class="logo-text">Mosaic</span>
@@ -128,9 +127,18 @@
   </div>
   <div class="main" id="main-area">
     <div class="content-header">
-      <div class="content-title" id="content-title">全部</div>
+      <button class="content-menu-btn" id="sidebar-toggle" aria-label="menu">☰</button>
+      <div class="board-tabs" id="board-tabs">
+        <button class="board-tab" data-tab-cat="home"><span class="bt-icon">🏠</span><span class="bt-label" data-tablb="home">首頁</span></button>
+        <button class="board-tab" data-tab-cat="news"><span class="bt-icon">📰</span><span class="bt-label" data-tablb="news">新聞</span><span class="tab-count">0</span></button>
+        <button class="board-tab" data-tab-cat="emergency"><span class="bt-icon">🚨</span><span class="bt-label" data-tablb="emergency">緊急</span><span class="tab-count">0</span></button>
+        <button class="board-tab" data-tab-cat="asylum"><span class="bt-icon">✈️</span><span class="bt-label" data-tablb="asylum">庇護</span><span class="tab-count">0</span></button>
+        <button class="board-tab" data-tab-cat="medical"><span class="bt-icon">🏥</span><span class="bt-label" data-tablb="medical">醫療</span><span class="tab-count">0</span></button>
+        <button class="board-tab" data-tab-cat="safety"><span class="bt-icon">🔒</span><span class="bt-label" data-tablb="safety">安全</span><span class="tab-count">0</span></button>
+        <button class="board-tab" data-tab-cat="cases"><span class="bt-icon">⚖️</span><span class="bt-label" data-tablb="cases">案件</span><span class="tab-count">0</span></button>
+        <button class="board-tab bt-guest" data-tab-cat="guest"><span class="bt-icon">✍️</span><span class="bt-label" data-tablb="guest">嘉賓</span></button>
+      </div>
       <div class="content-count" id="content-count">— 則</div>
-      <div class="content-hint" id="content-hint">點擊卡片展開 · 點擊標籤篩選</div>
     </div>
     <div class="cards-scroll" id="cards-scroll">
       <div id="cards-grid"></div>

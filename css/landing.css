@@ -94,6 +94,20 @@ body::before {
 }
 .nav-actions a:hover { color:var(--color-now); }
 
+.nav-actions .nav-link-archive {
+  display:inline-flex; align-items:center; gap:6px;
+  padding:7px 18px;
+  border:1px solid var(--line); border-radius:999px;
+  color:var(--text); font-weight:600; font-size:13px;
+  font-family:'Noto Sans TC','Noto Sans SC',sans-serif; letter-spacing:.02em;
+  transition:all .2s;
+}
+.nav-actions .nav-link-archive::after { content:'→'; transition:transform .2s; }
+.nav-actions .nav-link-archive:hover {
+  background:var(--line); color:var(--bg);
+}
+.nav-actions .nav-link-archive:hover::after { transform:translateX(3px); }
+
 .nav-actions .nav-cta {
   padding:6px 16px;
   border:1px solid var(--line); border-radius:2px;
@@ -377,9 +391,7 @@ body::before {
 @media (max-width:768px) {
   .topnav { padding:0 18px; }
   .nav-actions { gap:12px; }
-  .nav-actions .nav-link-archive,
-  .nav-actions .nav-link-tools,
-  .nav-actions .nav-link-guest { display:none; }
+  .nav-actions .nav-link-archive { padding:6px 14px; font-size:12.5px; }
   .hero { padding:110px 20px 60px; }
   .hero-title { font-size:34px; }
   .hero-subtitle { font-size:15px; }

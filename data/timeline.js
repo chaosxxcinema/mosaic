@@ -38,34 +38,6 @@ const timelineData = [
     }
   },
   {
-    "type": "node",
-    "era": "era-now",
-    "side": "left",
-    "delay": 0.2,
-    "date": "2026.03",
-    "region": "USA",
-    "tag": {
-      "zh": "案例",
-      "zh-cn": "案例",
-      "en": "CASE"
-    },
-    "title": {
-      "zh": "首例中國跨性別者 Asylum 通過判例",
-      "zh-cn": "首例中国跨性别者 Asylum 通过判例",
-      "en": "First Chinese Trans Asylum Case Granted"
-    },
-    "summary": {
-      "zh": "紐約移民法庭認定：中國針對跨性別者的系統性歧視，構成 well-founded fear of persecution。判例細節、律師策略，以及對後續申請者的意義。",
-      "zh-cn": "纽约移民法庭认定：中国针对跨性别者的系统性歧视，构成 well-founded fear of persecution。判例细节、律师策略，以及对后续申请者的意义。",
-      "en": "NYC Immigration Court ruled China's systematic trans discrimination constitutes persecution. Case details, legal strategy, and implications for future applicants."
-    },
-    "action": {
-      "zh": "完整分析",
-      "zh-cn": "完整分析",
-      "en": "FULL ANALYSIS"
-    }
-  },
-  {
     "type": "quote",
     "text": {
       "zh": "\"當下的傷口是熱的，<br>遠古的記憶是冷的，<br>但都是同一道彩虹的延續。\"",

@@ -165,9 +165,6 @@ body{font-family:'DM Sans','Noto Sans TC','Noto Sans SC',sans-serif;background:v
 .panel-author-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:rgba(5,150,105,.8);margin-bottom:5px;font-weight:600;}
 .panel-author-name{font-size:13px;font-weight:600;color:var(--text);margin-bottom:3px;}
 .panel-author-bio{font-size:11.5px;color:var(--text-mid);line-height:1.6;}
-.panel-listen-btn{display:inline-flex;align-items:center;gap:6px;background:rgba(16,185,129,.12);border:1px solid rgba(16,185,129,.35);color:rgba(5,150,105,.95);border-radius:8px;padding:8px 16px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;cursor:pointer;transition:all .18s;margin-bottom:16px;}
-.panel-listen-btn:hover{background:rgba(16,185,129,.22);}
-.panel-listen-btn.playing{background:rgba(16,185,129,.25);border-color:rgba(16,185,129,.6);}
 .panel-guest-disclaimer{background:rgba(245,200,66,.08);border:1px solid rgba(245,200,66,.25);border-radius:8px;padding:11px 13px;margin-top:16px;font-size:10.5px;line-height:1.75;color:var(--text-mid);}
 .panel-guest-disclaimer strong{color:var(--text);font-weight:600;}
 .panel-copyright{background:rgba(58,111,232,.08);border:1px solid rgba(58,111,232,.22);border-radius:8px;padding:11px 13px;margin-top:10px;font-size:10.5px;line-height:1.75;color:var(--text-mid);}

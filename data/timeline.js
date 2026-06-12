@@ -90,7 +90,35 @@ const timelineData = [
     "type": "node",
     "era": "era-recent",
     "side": "left",
-    "delay": 0.4,
+    "delay": 0.35,
+    "date": "2021.11",
+    "region": "CHINA",
+    "tag": {
+      "zh": "里程碑",
+      "zh-cn": "里程碑",
+      "en": "MILESTONE"
+    },
+    "title": {
+      "zh": "權促會宣布無限期停止工作",
+      "zh-cn": "权促会宣布无限期停止工作",
+      "en": "LGBT Rights Advocacy China Halts All Work"
+    },
+    "summary": {
+      "zh": "成立於 2013 年的同志平等權益促進會註銷公眾號與微博，宣布無限期停止一切工作。它曾推動中國首例性傾向扭轉治療案、首例同志教師勞動權案——數十件改寫同志權益法制進程的案件，至此失去了背後的推手。",
+      "zh-cn": "成立于 2013 年的同志平等权益促进会注销公众号与微博，宣布无限期停止一切工作。它曾推动中国首例性倾向扭转治疗案、首例同志教师劳动权案——数十件改写同志权益法制进程的案件，至此失去了背后的推手。",
+      "en": "Founded in 2013, LGBT Rights Advocacy China deleted its accounts and suspended all work indefinitely. It had driven China's first conversion-therapy case and first gay teacher labor-rights case — dozens of cases that shaped LGBT legal progress lost their engine."
+    },
+    "action": {
+      "zh": "閱讀",
+      "zh-cn": "阅读",
+      "en": "READ"
+    }
+  },
+  {
+    "type": "node",
+    "era": "era-recent",
+    "side": "right",
+    "delay": 0.45,
     "date": "2021.09",
     "region": "CHINA",
     "tag": {
@@ -112,6 +140,34 @@ const timelineData = [
       "zh": "本質分析",
       "zh-cn": "本质分析",
       "en": "ANALYSIS"
+    }
+  },
+  {
+    "type": "node",
+    "era": "era-recent",
+    "side": "left",
+    "delay": 0.5,
+    "date": "2020.08",
+    "region": "SHANGHAI",
+    "tag": {
+      "zh": "里程碑",
+      "zh-cn": "里程碑",
+      "en": "MILESTONE"
+    },
+    "title": {
+      "zh": "上海驕傲節停辦",
+      "zh-cn": "上海骄傲节停办",
+      "en": "ShanghaiPRIDE Shuts Down"
+    },
+    "summary": {
+      "zh": "連續舉辦 12 年、由志願者支撐的中國大陸唯一驕傲節宣布停辦，組織者只留下一句「壓力已經大到不行」。騎行、影展、論壇——一座城市公開慶祝過的所有方式，自此轉入沉默。",
+      "zh-cn": "连续举办 12 年、由志愿者支撑的中国大陆唯一骄傲节宣布停办，组织者只留下一句「压力已经大到不行」。骑行、影展、论坛——一座城市公开庆祝过的所有方式，自此转入沉默。",
+      "en": "After 12 consecutive years, mainland China's only Pride festival — entirely volunteer-run — announced its end; organizers said only that 'the pressure became unbearable.' Rides, film screenings, forums: every way a city had celebrated openly fell silent."
+    },
+    "action": {
+      "zh": "閱讀",
+      "zh-cn": "阅读",
+      "en": "READ"
     }
   },
   {

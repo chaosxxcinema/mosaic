@@ -253,8 +253,9 @@ body::before {
 .event-card {
   background:var(--bg-paper); border:1px solid rgba(0,0,0,.08);
   border-radius:2px; padding:24px 28px; width:100%; max-width:420px;
-  cursor:pointer; transition:all .4s cubic-bezier(0.16,1,0.3,1);
+  cursor:default; transition:all .4s cubic-bezier(0.16,1,0.3,1);
   box-shadow:0 1px 3px rgba(0,0,0,.04);
+  position:relative; z-index:4; /* 高於連接線(z-3)與樹幹,避免線條壓住卡片文字 */
 }
 .event-node.left  .event-card { margin-left:auto; }
 .event-node.right .event-card { margin-right:auto; }
@@ -273,7 +274,8 @@ body::before {
 .card-region { color:var(--text-dim); text-transform:uppercase; }
 .card-tag {
   margin-left:auto; padding:3px 8px;
-  background:currentColor; color:var(--bg);
+  background:currentColor; /* currentColor=繼承的時代色;不可在本元素設 color,否則背景會變成文字色 */
+  -webkit-text-fill-color:var(--bg); /* 只塗文字、不改變 color 計算值 */
   border-radius:2px; font-size:10px;
   text-transform:uppercase; letter-spacing:.1em; font-weight:500;
 }
@@ -291,17 +293,8 @@ body::before {
 .card-summary {
   font-family:'Noto Sans TC','Noto Sans SC',sans-serif;
   font-size:14px; font-weight:400;
-  line-height:1.75; color:var(--text-soft); margin-bottom:16px;
+  line-height:1.75; color:var(--text-soft);
 }
-
-.card-action {
-  display:inline-flex; align-items:center; gap:6px;
-  font-family:'DM Mono',monospace; font-size:11px; font-weight:500;
-  color:currentColor; text-transform:uppercase; letter-spacing:.1em;
-  border-bottom:1px solid currentColor; padding-bottom:2px;
-}
-.card-action::after { content:'→'; transition:transform .3s; }
-.event-card:hover .card-action::after { transform:translateX(4px); }
 
 /* 時代色 */
 .era-now     { color:var(--color-now); }
@@ -313,8 +306,9 @@ body::before {
 /* 章節引言 */
 .epoch-quote {
   margin:100px auto; max-width:600px;
-  text-align:center; padding:0 32px;
+  text-align:center; padding:24px 32px;
   position:relative; z-index:2;
+  background:var(--bg); /* 遮住背後的樹幹線,避免線條穿過引言文字 */
 }
 .epoch-quote-text {
   font-family:'Noto Serif TC',serif; font-size:27px; font-weight:400;
@@ -330,6 +324,7 @@ body::before {
 .tree-root {
   text-align:center; padding:100px 32px 60px;
   position:relative; z-index:2;
+  background:var(--bg); /* 遮住背後的樹幹線 */
 }
 .tree-root-text {
   font-family:'Noto Serif TC',serif; font-size:14px;
@@ -342,7 +337,7 @@ body::before {
   letter-spacing:.15em; text-transform:uppercase;
   color:var(--text); text-decoration:none;
   padding:16px 40px; border:1px solid var(--line);
-  background:transparent; cursor:pointer; transition:all .3s;
+  background:var(--bg); cursor:pointer; transition:all .3s;
 }
 .tree-root-cta:hover { background:var(--line); color:var(--bg); }
 

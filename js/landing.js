@@ -75,7 +75,6 @@ function renderTree() {
       const tag     = item.tag[lang]     || item.tag.zh;
       const title   = item.title[lang]   || item.title.zh;
       const summary = item.summary[lang] || item.summary.zh;
-      const action  = item.action[lang]  || item.action.zh;
       const titleClass = item.titleClass ? ` ${item.titleClass}` : '';
 
       container.innerHTML += `
@@ -90,7 +89,6 @@ function renderTree() {
             </div>
             <h3 class="card-title${titleClass}">${title}</h3>
             <p class="card-summary">${summary}</p>
-            <span class="card-action">${action}</span>
           </div>
         </div>`;
     }

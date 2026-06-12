@@ -1,114 +1,14 @@
 // Mosaic 新聞 · 2026 第二季 (4-6月)
-// 新增一季:複製此檔改名 news-2026-Q3.js,再到 archive.html 加一行 script
+// 2026-06-11 清理:移除4條無法核實的測試條目(原id 1,2,5,9)
+// 保留原id 3,4(蝦蝦確認真實)——⚠️ TODO:兩條的 url 仍是媒體首頁,請補上具體報道的永久鏈接
 window.newsData = (window.newsData || []).concat([
-  {
-    "id": 1,
-    "cat": "news",
-    "country": "us",
-    "date": "2026-04-30",
-    "urgent": false,
-    "source": {
-      "en": "LGBTQ Nation",
-      "zh": "LGBTQ Nation"
-    },
-    "title": {
-      "en": "Trump Administration Reverses Pride Flag Policy at Stonewall Monument",
-      "zh": "特朗普政府撤回石牆紀念碑驕傲旗幟禁令"
-    },
-    "summary": {
-      "en": "The administration reversed its ban on flying rainbow Pride flags at federal properties, reinstating the flag at Stonewall National Monument after community pressure and legal challenges.",
-      "zh": "政府在社區施壓和法律挑戰後撤回了在聯邦財產懸掛彩虹旗的禁令，恢復了石牆國家紀念碑的旗幟展示。"
-    },
-    "full": {
-      "en": "The administration's reversal came after sustained pressure from LGBTQ+ advocacy groups and Democratic lawmakers who argued the ban violated First Amendment protections. The Stonewall National Monument, which commemorates the 1969 riots, will continue to fly the Pride flag during designated periods.",
-      "zh": "政府的撤回決定源於 LGBTQ+ 倡議組織和民主黨議員的持續施壓。石牆國家紀念碑——紀念1969年暴動——將在指定時期繼續懸掛驕傲旗幟。"
-    },
-    "tags": [
-      {
-        "t": {
-          "en": "🇺🇸 US",
-          "zh": "🇺🇸 美國"
-        },
-        "c": "ct-us"
-      },
-      {
-        "t": {
-          "en": "⚖️ Policy",
-          "zh": "⚖️ 政策"
-        },
-        "c": "ct-legal"
-      },
-      {
-        "t": {
-          "en": "📰 News",
-          "zh": "📰 新聞"
-        },
-        "c": "ct-news"
-      }
-    ],
-    "color": "var(--glass-red)",
-    "url": "https://lgbtqnation.com",
-    "sub": "global"
-  },
-  {
-    "id": 2,
-    "cat": "news",
-    "country": "us",
-    "date": "2026-04-28",
-    "urgent": false,
-    "source": {
-      "en": "The Advocate",
-      "zh": "The Advocate"
-    },
-    "title": {
-      "en": "Senate Hearing Addresses 34% Surge in Anti-LGBTQ+ Hate Crimes",
-      "zh": "參議院聽證會審查反 LGBTQ+ 仇恨犯罪激增34%問題"
-    },
-    "summary": {
-      "en": "A Senate subcommittee examined a 34% year-over-year increase in anti-LGBTQ+ hate crimes, with witnesses testifying to gaps in federal protections.",
-      "zh": "參議院小組委員會就反 LGBTQ+ 仇恨犯罪較去年同期增加34%舉行聽證，證人就聯邦保護的缺口作證。"
-    },
-    "full": {
-      "en": "Data presented showed disproportionate targeting of transgender women of colour and youth. Committee members from both parties called for enhanced reporting requirements and dedicated federal investigation resources.",
-      "zh": "提交的數據顯示有色人種跨性別女性和青少年受到不成比例的針對。兩黨委員會成員呼籲加強報告要求並為調查提供專項聯邦資源。"
-    },
-    "tags": [
-      {
-        "t": {
-          "en": "🇺🇸 US",
-          "zh": "🇺🇸 美國"
-        },
-        "c": "ct-us"
-      },
-      {
-        "t": {
-          "en": "⚖️ Rights",
-          "zh": "⚖️ 權利"
-        },
-        "c": "ct-legal"
-      },
-      {
-        "t": {
-          "en": "📰 News",
-          "zh": "📰 新聞"
-        },
-        "c": "ct-news"
-      }
-    ],
-    "color": "var(--glass-red)",
-    "url": "https://advocate.com",
-    "sub": "global"
-  },
   {
     "id": 3,
     "cat": "news",
     "country": "cn",
     "date": "2026-04-25",
     "urgent": false,
-    "source": {
-      "en": "Radio Free Asia",
-      "zh": "自由亞洲電台"
-    },
+    "source": { "en": "Radio Free Asia", "zh": "自由亞洲電台" },
     "title": {
       "en": "Guangzhou LGBT Youth Group Shuttered After Police Warning",
       "zh": "廣州 LGBT 青年支持小組在警方警告後被迫關閉"
@@ -122,27 +22,9 @@ window.newsData = (window.newsData || []).concat([
       "zh": "該小組為青年提供諮詢和社區連接，已運營三年。人權觀察人士指出，這延續了自2021年以來對 LGBTQ+ 公民社會限制的更廣泛模式。"
     },
     "tags": [
-      {
-        "t": {
-          "en": "🇨🇳 China",
-          "zh": "🇨🇳 中國"
-        },
-        "c": "ct-cn"
-      },
-      {
-        "t": {
-          "en": "📰 News",
-          "zh": "📰 新聞"
-        },
-        "c": "ct-news"
-      },
-      {
-        "t": {
-          "en": "⚠️ Suppression",
-          "zh": "⚠️ 打壓"
-        },
-        "c": "ct-urgent"
-      }
+      { "t": { "en": "🇨🇳 China", "zh": "🇨🇳 中國" }, "c": "ct-cn" },
+      { "t": { "en": "📰 News", "zh": "📰 新聞" }, "c": "ct-news" },
+      { "t": { "en": "⚠️ Suppression", "zh": "⚠️ 打壓" }, "c": "ct-urgent" }
     ],
     "color": "var(--glass-orange)",
     "url": "https://rfa.org",
@@ -154,10 +36,7 @@ window.newsData = (window.newsData || []).concat([
     "country": "cn",
     "date": "2026-04-20",
     "urgent": false,
-    "source": {
-      "en": "The Initium Media",
-      "zh": "端傳媒"
-    },
+    "source": { "en": "The Initium Media", "zh": "端傳媒" },
     "title": {
       "en": "Inside China's Underground LGBTQ+ Networks",
       "zh": "中國 LGBTQ+ 地下網絡內部：如何在審查中生存"
@@ -171,121 +50,67 @@ window.newsData = (window.newsData || []).concat([
       "zh": "報告記錄了包括隱語表情、遷移至加密平台，以及偽裝成讀書俱樂部的線下小組等策略。作者在六個城市採訪了超過30名成員。"
     },
     "tags": [
-      {
-        "t": {
-          "en": "🇨🇳 China",
-          "zh": "🇨🇳 中國"
-        },
-        "c": "ct-cn"
-      },
-      {
-        "t": {
-          "en": "📰 Investigative",
-          "zh": "📰 調查報道"
-        },
-        "c": "ct-news"
-      }
+      { "t": { "en": "🇨🇳 China", "zh": "🇨🇳 中國" }, "c": "ct-cn" },
+      { "t": { "en": "📰 Investigative", "zh": "📰 調查報道" }, "c": "ct-news" }
     ],
     "color": "var(--glass-orange)",
     "url": "https://theinitium.com",
     "sub": "zh-sphere"
   },
   {
-    "id": 5,
+    "id": 260429,
     "cat": "news",
     "country": "us",
-    "date": "2026-05-01",
-    "urgent": false,
-    "source": {
-      "en": "NYC Pride",
-      "zh": "NYC Pride"
-    },
+    "date": "2026-04-29",
+    "urgent": true,
+    "source": { "en": "Federal Register (DHS/USCIS)", "zh": "美國聯邦公報（國土安全部/移民局）" },
     "title": {
-      "en": "NYC Pride 2026: March Route Announced, Volunteer Registration Open",
-      "zh": "2026 紐約驕傲遊行：路線公佈，義工報名開放"
+      "en": "URGENT: From May 29, Unpaid Annual Asylum Fee Can Get Pending Asylum Cases Rejected",
+      "zh": "緊急：5月29日起，未繳「庇護年費」可導致待審庇護申請被駁回"
     },
     "summary": {
-      "en": "NYC Pride announced the 2026 march route through Manhattan. Theme: \"Resilience & Resistance.\" Volunteer registration now open, closes May 15.",
-      "zh": "紐約驕傲遊行公佈2026年曼哈頓路線，主題為「韌性與抵抗」，義工報名開放至5月15日。"
+      "en": "DHS published an interim final rule (effective 2026-05-29) codifying the H.R.1 asylum fees: a one-time $100 fee for Form I-589 and an Annual Asylum Fee ($100 for FY2025, $102 after inflation adjustment) for every pending case. Failure to pay the AAF within 30 days of USCIS notification will result in rejection of the pending asylum application; applicants without legal status may face removal proceedings. The fees cannot be waived.",
+      "zh": "國土安全部發布《臨時最終規則》（2026年5月29日生效），落實 H.R.1 法案的庇護收費：I-589 表格一次性申請費100美元，加上每件待審案件須繳的「庇護年費」（AAF，2025財年100美元，通脹調整後為102美元）。收到移民局繳費通知後30天內未繳納年費，待審庇護申請將被駁回；無合法身份者並可能被啟動遣返程序。上述費用不可豁免。"
     },
     "full": {
-      "en": "New this year: a dedicated section for asylum seekers and immigrants. Volunteer roles include marshals, accessibility guides, and medical support.",
-      "zh": "今年新增：為尋求庇護者和移民設立的專門環節。義工崗位包括遊行引導員、無障礙服務和醫療支持。"
+      "en": "[What happened] USCIS began collecting H.R.1 immigration fees for filings postmarked on or after 2025-07-22 (Federal Register notice of the same date). On 2026-04-29 DHS published an interim final rule, effective 2026-05-29, codifying the fees and the consequences of non-payment. Note: AAF notices were court-ordered paused on 2025-10-30 (ASAP v. USCIS) before this rule. [What this means] Every Chinese-speaking asylum seeker with a pending I-589 — whether or not the interview has happened — is subject to the annual fee until the case is decided. Missing a payment deadline now has case-ending consequences. [What you can do] Check the USCIS online account and mailbox regularly for fee notices; pay online within 30 days; if a notice seems wrong or was missed, contact an accredited legal aid organization immediately rather than ignoring it. [Source] Federal Register, DHS interim final rule, 2026-04-29; USCIS fee alert, 2025-07-18.",
+      "zh": "【發生了什麼】移民局自2025年7月22日起對 H.R.1 法案規定的多項移民費用開始收費（同日聯邦公報公告）；2026年4月29日，國土安全部發布《臨時最終規則》，5月29日生效，正式寫入收費規定及不繳費的後果。註：庇護年費通知曾因法院命令於2025年10月30日暫停（ASAP 訴 USCIS 案），本規則後恢復推進。【對你意味著什麼】所有持有待審 I-589 的華語庇護申請人——無論是否已面談——在案件審結前每年都須繳納年費；錯過繳費期限如今會直接導致案件被駁回。【可以做什麼】定期查看移民局線上帳戶與郵件，收到繳費通知後30天內在線繳納；若認為通知有誤或已錯過期限，立即聯繫認證的法律援助組織，切勿置之不理。【信源】聯邦公報，國土安全部臨時最終規則，2026-04-29；移民局收費公告，2025-07-18。"
     },
     "tags": [
-      {
-        "t": {
-          "en": "🇺🇸 NYC",
-          "zh": "🇺🇸 紐約"
-        },
-        "c": "ct-us"
-      },
-      {
-        "t": {
-          "en": "🗓 Event",
-          "zh": "🗓 活動"
-        },
-        "c": "ct-event"
-      },
-      {
-        "t": {
-          "en": "🆓 Free",
-          "zh": "🆓 免費"
-        },
-        "c": "ct-free"
-      }
+      { "t": { "en": "🆘 Urgent", "zh": "🆘 緊急" }, "c": "ct-urgent" },
+      { "t": { "en": "⚖️ Asylum", "zh": "⚖️ 庇護" }, "c": "ct-legal" },
+      { "t": { "en": "🇺🇸 US", "zh": "🇺🇸 美國" }, "c": "ct-us" }
     ],
     "color": "var(--glass-red, #e8463a)",
-    "url": "https://nycpride.org",
+    "url": "https://www.federalregister.gov/documents/2026/04/29/2026-08333/uscis-immigration-fees-and-related-procedures-required-by-hr1-reconciliation-bill",
     "sub": "global"
   },
   {
-    "id": 9,
+    "id": 260420,
     "cat": "news",
     "country": "us",
-    "date": "2026-04-18",
-    "urgent": true,
-    "source": {
-      "en": "ACLU",
-      "zh": "ACLU"
-    },
+    "date": "2026-04-20",
+    "urgent": false,
+    "source": { "en": "NewYork.cn", "zh": "NewYork.cn 紐約中文導覽" },
     "title": {
-      "en": "URGENT: Gender Marker Changes May Be Restricted After May 15",
-      "zh": "緊急：性別標記更改可能在5月15日後受限"
+      "en": "NYC Pride 2026: March Set for Sunday, June 28, Down Fifth Avenue Past Stonewall",
+      "zh": "2026 紐約驕傲遊行：6月28日（週日）沿第五大道舉行，途經石牆酒吧"
     },
     "summary": {
-      "en": "ACLU urges transgender individuals to expedite gender marker updates on federal documents before a new executive order takes effect May 15. Free legal support available.",
-      "zh": "ACLU 敦促跨性別人士在新行政令5月15日生效前加急更新聯邦文件性別標記，提供免費法律支持。"
+      "en": "The 2026 NYC Pride March takes place Sunday, June 28, heading down Fifth Avenue into Greenwich Village past the Stonewall Inn, with PrideFest street festival the same day and events throughout June.",
+      "zh": "2026年紐約驕傲遊行於6月28日（週日）舉行，隊伍沿第五大道南行進入格林威治村，途經石牆酒吧；同日舉辦驕傲節街會，整個六月均有相關活動。"
     },
     "full": {
-      "en": "Contact the ACLU's LGBTQ+ Rights Project at 212-549-2627 or through their online intake form. Services are free of charge. Affects passports, Social Security cards, and other federal documents.",
-      "zh": "請致電 ACLU 的 LGBTQ+ 權利項目 212-549-2627 或通過在線接待表聯繫。服務免費。影響護照、社會安全卡和其他聯邦文件。"
+      "en": "[What happened] The march starts at 26th St & Fifth Ave around 11am and ends near 15th St & Seventh Ave, passing the Stonewall Inn — site of the 1969 riots. Proceeds from Pride events support local LGBTQIA+ organizations. [What this means] For Chinese-speaking newcomers and asylum seekers in the NYC area, Pride weekend is a low-barrier way to connect with community organizations that table at PrideFest, including legal and health service providers. [What you can do] Attendance is free; check nycpride.org for the official route, accessibility info and volunteer registration. [Source] NewYork.cn Chinese-language event guide, 2026.",
+      "zh": "【發生了什麼】遊行約於上午11時從第五大道與26街交界出發，至第七大道與15街附近結束，途經1969年石牆暴動發生地石牆酒吧；驕傲活動收益用於支持本地 LGBTQIA+ 組織。【對你意味著什麼】對紐約地區的華語新移民與庇護申請人而言，驕傲週末是低門檻接觸社群組織的機會——驕傲節街會上有法律、醫療等服務機構設攤。【可以做什麼】活動免費參加；官方路線、無障礙資訊與義工報名請以 nycpride.org 為準。【信源】NewYork.cn 中文活動指南，2026年。"
     },
     "tags": [
-      {
-        "t": {
-          "en": "🆘 Urgent",
-          "zh": "🆘 緊急"
-        },
-        "c": "ct-urgent"
-      },
-      {
-        "t": {
-          "en": "🏳️‍⚧️ Trans",
-          "zh": "🏳️‍⚧️ 跨性別"
-        },
-        "c": "ct-legal"
-      },
-      {
-        "t": {
-          "en": "🆓 Free Help",
-          "zh": "🆓 免費援助"
-        },
-        "c": "ct-free"
-      }
+      { "t": { "en": "🇺🇸 NYC", "zh": "🇺🇸 紐約" }, "c": "ct-us" },
+      { "t": { "en": "🗓 Event", "zh": "🗓 活動" }, "c": "ct-event" },
+      { "t": { "en": "🆓 Free", "zh": "🆓 免費" }, "c": "ct-free" }
     ],
     "color": "var(--glass-red, #e8463a)",
-    "url": "https://aclu.org",
-    "sub": "global"
+    "url": "https://www.newyork.cn/niuyuejiaoao/",
+    "sub": "overseas"
   }
 ]);

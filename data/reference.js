@@ -1,6 +1,7 @@
 // Mosaic 參考資料(穩定型:緊急資源/庇護/醫療/安全工具/歷史案件)
 // 這些內容很少變動,整理一次即可長期使用
-// 2026-06-11:已移除全部測試用嘉賓文章(21篇),嘉賓板塊改為空板塊+投稿邀請,等待真實投稿
+// 2026-06-11:已移除全部測試用嘉賓文章(21篇)
+// 2026-06-12:刊登首篇真實嘉賓文章《操場上的守望》(XiaXia)
 window.referenceData = [
   {
     "id": 6,
@@ -1733,5 +1734,61 @@ window.referenceData = [
     ],
     "color": "var(--glass-green, #3a9e5f)",
     "url": "https://www.canada.ca/en/immigration-refugees-citizenship.html"
+  },
+  {
+    "id": 20260612,
+    "cat": "guest",
+    "country": "all",
+    "date": "2026-06-12",
+    "urgent": false,
+    "source": {
+      "en": "Mosaic Guest",
+      "zh": "Mosaic 特邀嘉賓",
+      "zh-cn": "Mosaic 特邀嘉宾"
+    },
+    "title": {
+      "en": "Keeping Watch on the Playground",
+      "zh": "操場上的守望",
+      "zh-cn": "操场上的守望"
+    },
+    "summary": {
+      "en": "A memory that began on a school playground: a watch, a notice, a seed — and, many years later, a website.",
+      "zh": "一段從操場開始的記憶：一次守望、一份通知書、一顆種子，以及很多年後的一個網站。",
+      "zh-cn": "一段从操场开始的记忆：一次守望、一份通知书、一颗种子，以及很多年后的一个网站。"
+    },
+    "full": {
+      "en": "Many years ago, I used to gaze out the window at a graceful figure, lost in thought. I was a student then, too young to name what I was feeling — like the aftertaste of sweet water just swallowed, like the thrill of leaping down five steps in one jump. The corners of my mouth would curl into a lovely little arc I never even noticed.\n\nThat was how everything began. Carrying that secret — the quiet delight, the expectation, the unknown — I kept watch on the school playground, time after time, for that figure as slender as my own.\n\nBecause it was new, because I still held hope, I confided my trouble to the teacher I trusted most. What defeated me, in the end, was not that secret feeling — it was the betrayal of the adults.\n\nA written notice came down. She would know. The whole class would know. My parents would know — I had been named, and punished.\n\nTo this day I cannot understand how those adults, those role models, could bring themselves to tell a child who had only just learned to explore the world with her tender feelers, so coldly: you are wrong, you must play by our rules — and never once explain why.\n\nHow dare they?\n\nBut they dared. Not only did they dare — they snapped your feelers and strangled your hope.\n\nSo I learned to hide. But hiding is not surrender. That feeling did not die; it became a seed, buried in my heart. Through all these years I have been secretly watering her, caring for her, searching for a piece of safe ground in a place that offered no answers.\n\nUntil today. On my own two legs, with my own eyes and my own mind, I walked to this safe ground. And then I realized: maybe I can also turn around, and pull out the kids who are stuck where I once was.\n\nSo I built this website.\n\nIt has an escape button. Because I remember what hiding feels like.\n\nAs long as it exists, as long as it can be seen, there is a thread of hope; and where there is hope, there is the strength to climb out.\n\nEverything begins here.",
+      "zh": "很多年前，我曾望著窗外某個窈窕的身影發呆。那時我還是學生，懵懵懂懂，說不清那是一種什麼感覺——像剛嚥下甜水的回味，又像從五層階梯上一躍而下的興奮。我的嘴角會彎起一個自己都沒察覺到的、好看的弧度。\n\n這就是一切的開始。懷揣著這份隱秘、竊喜、期待與未知，我在學校的操場上，度過了一次又一次對那個和我一樣窈窕的身影的守望。\n\n因為新鮮，因為懷抱希望，我向最信任的老師傾訴了我的困惱。而最終打敗我的，不是那份隱秘的感情——是來自大人們的背叛。\n\n我收到了一份通知書。她會知道，全班同學會知道，我的父母也會知道——我被點名處罰了。\n\n我至今不明白，那些為人師表的大人們，怎麼忍心對一個剛剛學會用敏感的觸角探索世界的孩子，冷冰冰地說：你是錯誤的，你必須遵守和我們一樣的遊戲規則——卻不解釋為什麼。\n\n怎麼敢？\n\n可是他們敢。不但敢，還要折斷你的觸角，掐死你的希望。\n\n所以我學會了躲避。但躲避不代表屈服。那份感情沒有死，它變成一顆種子，埋在我心裏。這些年我偷偷澆灌她、愛護她，在一個沒有答案的環境裏，替她尋找一塊安全之地。\n\n直到今天，我靠自己的雙腿、雙眼和大腦，走到了這片安全之地。然後我發現，自己也許還能回過頭去，拉一把那些和當年的我一樣、正陷在困境裏的孩子。\n\n所以我做了這個網站。\n\n它有一個逃生按鈕。因為我記得，躲避是什麼感覺。\n\n只要存在，只要被看見，就有一絲希望；有希望，就有爬出來的力氣。\n\n一切，就從這裏開始。",
+      "zh-cn": "很多年前，我曾望着窗外某个窈窕的身影发呆。那时我还是学生，懵懵懂懂，说不清那是一种什么感觉——像刚咽下甜水的回味，又像从五层阶梯上一跃而下的兴奋。我的嘴角会弯起一个自己都没察觉到的、好看的弧度。\n\n这就是一切的开始。怀揣着这份隐秘、窃喜、期待与未知，我在学校的操场上，度过了一次又一次对那个和我一样窈窕的身影的守望。\n\n因为新鲜，因为怀抱希望，我向最信任的老师倾诉了我的困恼。而最终打败我的，不是那份隐秘的感情——是来自大人们的背叛。\n\n我收到了一份通知书。她会知道，全班同学会知道，我的父母也会知道——我被点名处罚了。\n\n我至今不明白，那些为人师表的大人们，怎么忍心对一个刚刚学会用敏感的触角探索世界的孩子，冷冰冰地说：你是错误的，你必须遵守和我们一样的游戏规则——却不解释为什么。\n\n怎么敢？\n\n可是他们敢。不但敢，还要折断你的触角，掐死你的希望。\n\n所以我学会了躲避。但躲避不代表屈服。那份感情没有死，它变成一颗种子，埋在我心里。这些年我偷偷浇灌她、爱护她，在一个没有答案的环境里，替她寻找一块安全之地。\n\n直到今天，我靠自己的双腿、双眼和大脑，走到了这片安全之地。然后我发现，自己也许还能回过头去，拉一把那些和当年的我一样、正陷在困境里的孩子。\n\n所以我做了这个网站。\n\n它有一个逃生按钮。因为我记得，躲避是什么感觉。\n\n只要存在，只要被看见，就有一丝希望；有希望，就有爬出来的力气。\n\n一切，就从这里开始。"
+    },
+    "author": {
+      "name": "XiaXia",
+      "bio": {
+        "en": "Builder of Mosaic.",
+        "zh": "Mosaic 的建造者。",
+        "zh-cn": "Mosaic 的建造者。"
+      }
+    },
+    "tags": [
+      {
+        "t": {
+          "en": "✍️ Essay",
+          "zh": "✍️ 隨筆",
+          "zh-cn": "✍️ 随笔"
+        },
+        "c": "ct-news"
+      },
+      {
+        "t": {
+          "en": "🌈 Guest",
+          "zh": "🌈 嘉賓",
+          "zh-cn": "🌈 嘉宾"
+        },
+        "c": "ct-free"
+      }
+    ],
+    "color": "var(--glass-orange, #f07c3a)",
+    "url": "#guest",
+    "sub": "all"
   }
 ];

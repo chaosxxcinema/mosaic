@@ -8,39 +8,46 @@ window.newsData = (window.newsData || []).concat([
     "urgent": false,
     "source": {
       "en": "BBC Chinese (via Yahoo News TW)",
-      "zh": "BBC 中文（Yahoo 奇摩新聞轉載）"
+      "zh": "BBC 中文（Yahoo 奇摩新聞轉載）",
+      "zh-cn": "BBC 中文（Yahoo 奇摩新闻转载）"
     },
     "title": {
       "en": "Taiwan's 'Gender Change Without Surgery' Lawsuits: 15 Cases Pending, 7 Court Victories, No Systemic Reform Yet",
-      "zh": "台灣「免術換證」訴訟潮：約15案進行中、7人勝訴，制度性變革仍未到來"
+      "zh": "台灣「免術換證」訴訟潮：約15案進行中、7人勝訴，制度性變革仍未到來",
+      "zh-cn": "台湾「免术换证」诉讼潮：约15案进行中、7人胜诉，制度性变革仍未到来"
     },
     "summary": {
       "en": "Under a 2008 Ministry of Interior directive, transgender people in Taiwan must present proof of sex reassignment surgery to change their legal gender. Around 15 administrative lawsuits challenging the rule are ongoing; seven plaintiffs have won individually through the courts, but the directive itself has not been amended.",
-      "zh": "依內政部2008年函釋，台灣跨性別者更改身分證性別欄須提出性別重置手術證明。目前約有15起挑戰該規定的行政訴訟進行中；此前已有7人經法院個案勝訴成功換證，但函釋本身仍未修改。"
+      "zh": "依內政部2008年函釋，台灣跨性別者更改身分證性別欄須提出性別重置手術證明。目前約有15起挑戰該規定的行政訴訟進行中；此前已有7人經法院個案勝訴成功換證，但函釋本身仍未修改。",
+      "zh-cn": "依内政部2008年函释，台湾跨性别者更改身分证性别栏须提出性别重置手术证明。目前约有15起挑战该规定的行政诉讼进行中；此前已有7人经法院个案胜诉成功换证，但函释本身仍未修改。"
     },
     "full": {
       "en": "[What happened] Ahead of the 2025 Taiwan Pride march, BBC Chinese reported on the wave of 'no-surgery gender marker change' litigation: plaintiffs denied at household registration offices are suing, courts have repeatedly ruled the surgery requirement disproportionate and unconstitutional in individual cases, yet each new applicant must still litigate. The issue has also sparked debate within and beyond the LGBTQ+ community. \n\n[What this means] Taiwan currently has no statutory path to change legal gender without surgery — court victories bind only the individual case. Readers considering relocation to Taiwan should not assume self-declared or diagnosis-based gender marker change is available. \n\n[What you can do] The Taiwan Alliance to Promote Civil Partnership Rights (伴侶盟) provides pro bono litigation support for gender-change cases. \n\n[Source] BBC Chinese report, republished by Yahoo News Taiwan, 2025-10-24.",
-      "zh": "【發生了什麼】2025年台灣同志遊行前夕，BBC中文報道「免術換證」訴訟潮：申請人在戶政事務所遭拒後提起行政訴訟，法院已在多起個案中認定強制手術要件違反比例原則、侵害身體權與人格權，但每位申請人仍須個別興訟。議題亦在社群內外引發路線討論。\n\n【對你意味著什麼】台灣目前沒有免手術變更法定性別的常規行政途徑——勝訴判決僅對個案有效。考慮赴台生活的跨性別讀者，請勿假設可憑診斷證明直接換證。\n\n【可以做什麼】台灣伴侶權益推動聯盟（伴盟）為性別變更登記訴訟提供義務律師協助，可經其官網聯繫。\n\n【信源】BBC中文報道（Yahoo奇摩新聞轉載），2025-10-24。"
+      "zh": "【發生了什麼】2025年台灣同志遊行前夕，BBC中文報道「免術換證」訴訟潮：申請人在戶政事務所遭拒後提起行政訴訟，法院已在多起個案中認定強制手術要件違反比例原則、侵害身體權與人格權，但每位申請人仍須個別興訟。議題亦在社群內外引發路線討論。\n\n【對你意味著什麼】台灣目前沒有免手術變更法定性別的常規行政途徑——勝訴判決僅對個案有效。考慮赴台生活的跨性別讀者，請勿假設可憑診斷證明直接換證。\n\n【可以做什麼】台灣伴侶權益推動聯盟（伴盟）為性別變更登記訴訟提供義務律師協助，可經其官網聯繫。\n\n【信源】BBC中文報道（Yahoo奇摩新聞轉載），2025-10-24。",
+      "zh-cn": "【发生了什么】2025年台湾同志游行前夕，BBC中文报道「免术换证」诉讼潮：申请人在户政事务所遭拒后提起行政诉讼，法院已在多起个案中认定强制手术要件违反比例原则、侵害身体权与人格权，但每位申请人仍须个别兴讼。议题亦在社群内外引发路线讨论。\n\n【对你意味著什么】台湾目前没有免手术变更法定性别的常规行政途径——胜诉判决仅对个案有效。考虑赴台生活的跨性别读者，请勿假设可凭诊断证明直接换证。\n\n【可以做什么】台湾伴侣权益推动联盟（伴盟）为性别变更登记诉讼提供义务律师协助，可经其官网联系。\n\n【信源】BBC中文报道（Yahoo奇摩新闻转载），2025-10-24。"
     },
     "tags": [
       {
         "t": {
           "en": "🇹🇼 Taiwan",
-          "zh": "🇹🇼 台灣"
+          "zh": "🇹🇼 台灣",
+          "zh-cn": "🇹🇼 台湾"
         },
         "c": "ct-cn"
       },
       {
         "t": {
           "en": "🏳️‍⚧️ Trans",
-          "zh": "🏳️‍⚧️ 跨性別"
+          "zh": "🏳️‍⚧️ 跨性別",
+          "zh-cn": "🏳️‍⚧️ 跨性别"
         },
         "c": "ct-legal"
       },
       {
         "t": {
           "en": "⚖️ Litigation",
-          "zh": "⚖️ 訴訟"
+          "zh": "⚖️ 訴訟",
+          "zh-cn": "⚖️ 诉讼"
         },
         "c": "ct-legal"
       }

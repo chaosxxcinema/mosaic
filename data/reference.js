@@ -2,6 +2,8 @@
 // 這些內容很少變動,整理一次即可長期使用
 // 2026-06-11:已移除全部測試用嘉賓文章(21篇)
 // 2026-06-12:刊登首篇真實嘉賓文章《操場上的守望》(XiaXia)
+// 2026-06-12:全站繁簡補全——用 OpenCC 為早期缺失的條目補齊簡體字段
+// 2026-06-12:新增11個援助/社群組織(常青):法律援助5(legal子類)+社群組織6(community子類),全部已核實官網
 window.referenceData = [
   {
     "id": 6,
@@ -11,46 +13,54 @@ window.referenceData = [
     "urgent": false,
     "source": {
       "en": "Immigration Equality",
-      "zh": "Immigration Equality"
+      "zh": "Immigration Equality",
+      "zh-cn": "Immigration Equality"
     },
     "title": {
       "en": "Free Legal Clinic: LGBTQ+ Asylum Seekers — NYC, May 8",
-      "zh": "免費法律診所：LGBTQ+ 庇護申請者——紐約，5月8日"
+      "zh": "免費法律診所：LGBTQ+ 庇護申請者——紐約，5月8日",
+      "zh-cn": "免费法律诊所：LGBTQ+ 庇护申请者——纽约，5月8日"
     },
     "summary": {
       "en": "Free in-person legal clinic at the LGBT Community Center, May 8, 10AM–4PM. Interpretation available in Spanish, Mandarin, and Cantonese.",
-      "zh": "5月8日上午10點至下午4點在 LGBT 社群中心舉辦免費現場法律診所，提供西班牙語、普通話和廣東話口譯。"
+      "zh": "5月8日上午10點至下午4點在 LGBT 社群中心舉辦免費現場法律診所，提供西班牙語、普通話和廣東話口譯。",
+      "zh-cn": "5月8日上午10点至下午4点在 LGBT 社群中心举办免费现场法律诊所，提供西班牙语、普通话和广东话口译。"
     },
     "full": {
       "en": "Volunteer attorneys provide 30-minute consultations on asylum eligibility and documentation. No appointment necessary. Remote video call option available with prior registration.",
-      "zh": "義工律師提供30分鐘庇護資格和文件諮詢。無需預約。提前報名可選擇遠程視頻諮詢。"
+      "zh": "義工律師提供30分鐘庇護資格和文件諮詢。無需預約。提前報名可選擇遠程視頻諮詢。",
+      "zh-cn": "义工律师提供30分钟庇护资格和文件咨询。无需预约。提前报名可选择远程视频咨询。"
     },
     "tags": [
       {
         "t": {
           "en": "🇺🇸 NYC",
-          "zh": "🇺🇸 紐約"
+          "zh": "🇺🇸 紐約",
+          "zh-cn": "🇺🇸 纽约"
         },
         "c": "ct-us"
       },
       {
         "t": {
           "en": "🗓 May 8",
-          "zh": "🗓 5月8日"
+          "zh": "🗓 5月8日",
+          "zh-cn": "🗓 5月8日"
         },
         "c": "ct-event"
       },
       {
         "t": {
           "en": "🆓 Free",
-          "zh": "🆓 免費"
+          "zh": "🆓 免費",
+          "zh-cn": "🆓 免费"
         },
         "c": "ct-free"
       },
       {
         "t": {
           "en": "⚖️ Asylum",
-          "zh": "⚖️ 庇護"
+          "zh": "⚖️ 庇護",
+          "zh-cn": "⚖️ 庇护"
         },
         "c": "ct-legal"
       }
@@ -67,46 +77,54 @@ window.referenceData = [
     "urgent": false,
     "source": {
       "en": "The Trevor Project",
-      "zh": "Trevor Project"
+      "zh": "Trevor Project",
+      "zh-cn": "Trevor Project"
     },
     "title": {
       "en": "Free Online Support Group: LGBTQ+ Youth 13–24 — Every Tuesday 7PM ET",
-      "zh": "免費線上支持小組：LGBTQ+ 青少年13–24歲——每週二晚7點"
+      "zh": "免費線上支持小組：LGBTQ+ 青少年13–24歲——每週二晚7點",
+      "zh-cn": "免费线上支持小组：LGBTQ+ 青少年13–24岁——每周二晚7点"
     },
     "summary": {
       "en": "Free weekly online support groups for LGBTQ+ youth, moderated by trained counsellors. No registration required. Anonymous participation available.",
-      "zh": "為 LGBTQ+ 青少年提供免費每週線上支持小組，由受訓輔導員主持，無需報名，可匿名參與。"
+      "zh": "為 LGBTQ+ 青少年提供免費每週線上支持小組，由受訓輔導員主持，無需報名，可匿名參與。",
+      "zh-cn": "为 LGBTQ+ 青少年提供免费每周线上支持小组，由受训辅导员主持，无需报名，可匿名参与。"
     },
     "full": {
       "en": "Crisis support also available 24/7 through TrevorLifeline at 1-866-488-7386 or by texting START to 678-678.",
-      "zh": "危機支持可通過撥打 TrevorLifeline 1-866-488-7386 或發短信 START 至 678-678 獲得24/7服務。"
+      "zh": "危機支持可通過撥打 TrevorLifeline 1-866-488-7386 或發短信 START 至 678-678 獲得24/7服務。",
+      "zh-cn": "危机支持可通过拨打 TrevorLifeline 1-866-488-7386 或发短信 START 至 678-678 获得24/7服务。"
     },
     "tags": [
       {
         "t": {
           "en": "🗓 Weekly",
-          "zh": "🗓 每週"
+          "zh": "🗓 每週",
+          "zh-cn": "🗓 每周"
         },
         "c": "ct-event"
       },
       {
         "t": {
           "en": "💻 Online",
-          "zh": "💻 線上"
+          "zh": "💻 線上",
+          "zh-cn": "💻 线上"
         },
         "c": "ct-event"
       },
       {
         "t": {
           "en": "🆓 Free",
-          "zh": "🆓 免費"
+          "zh": "🆓 免費",
+          "zh-cn": "🆓 免费"
         },
         "c": "ct-free"
       },
       {
         "t": {
           "en": "🧠 Mental Health",
-          "zh": "🧠 心理健康"
+          "zh": "🧠 心理健康",
+          "zh-cn": "🧠 心理健康"
         },
         "c": "ct-health"
       }
@@ -123,39 +141,46 @@ window.referenceData = [
     "urgent": false,
     "source": {
       "en": "Lambda Legal",
-      "zh": "Lambda Legal"
+      "zh": "Lambda Legal",
+      "zh-cn": "Lambda Legal"
     },
     "title": {
       "en": "Know Your Rights: LGBTQ+ Employees & Federal Protections 2026",
-      "zh": "瞭解你的權利：2026年 LGBTQ+ 僱員聯邦保護指南"
+      "zh": "瞭解你的權利：2026年 LGBTQ+ 僱員聯邦保護指南",
+      "zh-cn": "了解你的权利：2026年 LGBTQ+ 雇员联邦保护指南"
     },
     "summary": {
       "en": "Updated comprehensive guide on federal workplace protections for LGBTQ+ employees following recent Supreme Court and circuit court decisions. Free to download.",
-      "zh": "根據最高法院和巡迴法院最近判決更新的 LGBTQ+ 僱員聯邦職場保護全面指南，免費下載。"
+      "zh": "根據最高法院和巡迴法院最近判決更新的 LGBTQ+ 僱員聯邦職場保護全面指南，免費下載。",
+      "zh-cn": "根据最高法院和巡回法院最近判决更新的 LGBTQ+ 雇员联邦职场保护全面指南，免费下载。"
     },
     "full": {
       "en": "Covers Title VII protections from Bostock v. Clayton County, recent circuit interpretations, state-level gaps, and practical guidance for workers who have experienced discrimination.",
-      "zh": "涵蓋 Bostock 案中確認的第七章保護、巡迴法院近期解釋、州級保護缺口，以及遭受歧視工作者的實用指引。"
+      "zh": "涵蓋 Bostock 案中確認的第七章保護、巡迴法院近期解釋、州級保護缺口，以及遭受歧視工作者的實用指引。",
+      "zh-cn": "涵蓋 Bostock 案中确認的第七章保护、巡回法院近期解释、州级保护缺口，以及遭受歧视工作者的实用指引。"
     },
     "tags": [
       {
         "t": {
           "en": "🇺🇸 US",
-          "zh": "🇺🇸 美國"
+          "zh": "🇺🇸 美國",
+          "zh-cn": "🇺🇸 美国"
         },
         "c": "ct-us"
       },
       {
         "t": {
           "en": "⚖️ Workplace",
-          "zh": "⚖️ 職場"
+          "zh": "⚖️ 職場",
+          "zh-cn": "⚖️ 职场"
         },
         "c": "ct-legal"
       },
       {
         "t": {
           "en": "🆓 Free Guide",
-          "zh": "🆓 免費指南"
+          "zh": "🆓 免費指南",
+          "zh-cn": "🆓 免费指南"
         },
         "c": "ct-free"
       }
@@ -172,46 +197,54 @@ window.referenceData = [
     "urgent": false,
     "source": {
       "en": "Immigration Equality",
-      "zh": "Immigration Equality"
+      "zh": "Immigration Equality",
+      "zh-cn": "Immigration Equality"
     },
     "title": {
       "en": "Updated 2026 Asylum Guide for LGBTQ+ Applicants — Now in Mandarin",
-      "zh": "2026年 LGBTQ+ 庇護申請更新指南——現提供普通話版"
+      "zh": "2026年 LGBTQ+ 庇護申請更新指南——現提供普通話版",
+      "zh-cn": "2026年 LGBTQ+ 庇护申请更新指南——现提供普通话版"
     },
     "summary": {
       "en": "Updated guide reflecting 2025–2026 changes in processing times, documentation requirements, and legal precedents. Available in English, Spanish, and Mandarin.",
-      "zh": "反映2025–2026年處理時間、文件要求和法律先例變化的更新指南，提供英語、西班牙語和普通話版本。"
+      "zh": "反映2025–2026年處理時間、文件要求和法律先例變化的更新指南，提供英語、西班牙語和普通話版本。",
+      "zh-cn": "反映2025–2026年处理时间、文件要求和法律先例变化的更新指南，提供英语、西班牙语和普通话版本。"
     },
     "full": {
       "en": "Key updates: revised credible fear interview tips, new documentation strategies for applicants from countries with no official persecution record, updated expedited removal protections.",
-      "zh": "主要更新：修訂後的可信恐懼面談準備提示，針對沒有正式迫害記錄國家申請人的新文件策略，更新的加速遣返保護信息。"
+      "zh": "主要更新：修訂後的可信恐懼面談準備提示，針對沒有正式迫害記錄國家申請人的新文件策略，更新的加速遣返保護信息。",
+      "zh-cn": "主要更新：修订后的可信恐惧面谈准备提示，针对没有正式迫害记录国家申请人的新文件策略，更新的加速遣返保护信息。"
     },
     "tags": [
       {
         "t": {
           "en": "⚖️ Asylum",
-          "zh": "⚖️ 庇護"
+          "zh": "⚖️ 庇護",
+          "zh-cn": "⚖️ 庇护"
         },
         "c": "ct-legal"
       },
       {
         "t": {
           "en": "🌏 Immigration",
-          "zh": "🌏 移民"
+          "zh": "🌏 移民",
+          "zh-cn": "🌏 移民"
         },
         "c": "ct-legal"
       },
       {
         "t": {
           "en": "🆓 Free",
-          "zh": "🆓 免費"
+          "zh": "🆓 免費",
+          "zh-cn": "🆓 免费"
         },
         "c": "ct-free"
       },
       {
         "t": {
           "en": "🈳 中文",
-          "zh": "🈳 中文"
+          "zh": "🈳 中文",
+          "zh-cn": "🈳 中文"
         },
         "c": "ct-cn"
       }
@@ -228,46 +261,54 @@ window.referenceData = [
     "urgent": false,
     "source": {
       "en": "GLMA",
-      "zh": "GLMA"
+      "zh": "GLMA",
+      "zh-cn": "GLMA"
     },
     "title": {
       "en": "Free HIV Testing Events Across 8 US Cities — May 2026",
-      "zh": "美國8個城市免費 HIV 檢測活動——2026年5月"
+      "zh": "美國8個城市免費 HIV 檢測活動——2026年5月",
+      "zh-cn": "美国8个城市免费 HIV 检测活动——2026年5月"
     },
     "summary": {
       "en": "Free HIV testing events in NYC, LA, Chicago, Houston, Atlanta, Seattle, Denver, and Boston throughout May. No insurance or ID required. Results in 20 minutes.",
-      "zh": "整個5月在紐約、洛杉磯、芝加哥、休斯頓、亞特蘭大、西雅圖、丹佛和波士頓舉辦免費 HIV 檢測。不需要保險或身份證件，20分鐘出結果。"
+      "zh": "整個5月在紐約、洛杉磯、芝加哥、休斯頓、亞特蘭大、西雅圖、丹佛和波士頓舉辦免費 HIV 檢測。不需要保險或身份證件，20分鐘出結果。",
+      "zh-cn": "整个5月在纽约、洛杉矶、芝加哥、休斯顿、亚特兰大、西雅图、丹佛和波士顿举办免费 HIV 检测。不需要保险或身份证件，20分钟出结果。"
     },
     "full": {
       "en": "On-site counselling and PrEP referrals available. Find nearest event at glma.org/freetesting or text HITEST to 55753.",
-      "zh": "提供現場諮詢和 PrEP 轉介。請訪問 glma.org/freetesting 或發短信 HITEST 至55753查找最近活動。"
+      "zh": "提供現場諮詢和 PrEP 轉介。請訪問 glma.org/freetesting 或發短信 HITEST 至55753查找最近活動。",
+      "zh-cn": "提供现场咨询和 PrEP 转介。请访问 glma.org/freetesting 或发短信 HITEST 至55753查找最近活动。"
     },
     "tags": [
       {
         "t": {
           "en": "🇺🇸 US",
-          "zh": "🇺🇸 美國"
+          "zh": "🇺🇸 美國",
+          "zh-cn": "🇺🇸 美国"
         },
         "c": "ct-us"
       },
       {
         "t": {
           "en": "🆓 Free",
-          "zh": "🆓 免費"
+          "zh": "🆓 免費",
+          "zh-cn": "🆓 免费"
         },
         "c": "ct-free"
       },
       {
         "t": {
           "en": "🏥 HIV",
-          "zh": "🏥 HIV"
+          "zh": "🏥 HIV",
+          "zh-cn": "🏥 HIV"
         },
         "c": "ct-health"
       },
       {
         "t": {
           "en": "🗓 May",
-          "zh": "🗓 五月"
+          "zh": "🗓 五月",
+          "zh-cn": "🗓 五月"
         },
         "c": "ct-event"
       }
@@ -284,39 +325,46 @@ window.referenceData = [
     "urgent": false,
     "source": {
       "en": "Planned Parenthood",
-      "zh": "Planned Parenthood"
+      "zh": "Planned Parenthood",
+      "zh-cn": "Planned Parenthood"
     },
     "title": {
       "en": "Trans-Affirming Care: Updated Directory of Clinics Accepting New Patients",
-      "zh": "跨性別友善醫療：接受新患者診所更新目錄"
+      "zh": "跨性別友善醫療：接受新患者診所更新目錄",
+      "zh-cn": "跨性别友善医疗：接受新患者诊所更新目录"
     },
     "summary": {
       "en": "Updated national directory of trans-affirming providers. Filters for HRT, surgery consultations, mental health, youth services, and sliding scale fees. Telehealth options available.",
-      "zh": "更新的全國跨性別友善醫療服務提供者目錄，可按荷爾蒙療法、手術諮詢、心理健康、青少年服務篩選，提供遠程醫療選項。"
+      "zh": "更新的全國跨性別友善醫療服務提供者目錄，可按荷爾蒙療法、手術諮詢、心理健康、青少年服務篩選，提供遠程醫療選項。",
+      "zh-cn": "更新的全国跨性别友善医疗服务提供者目录，可按荷尔蒙疗法、手术咨询、心理健康、青少年服务筛选，提供远程医疗选项。"
     },
     "full": {
       "en": "Covers all 50 states. Many providers offer telehealth. Access at plannedparenthood.org/trans-health.",
-      "zh": "涵蓋全美50個州。許多提供者提供遠程醫療。請訪問 plannedparenthood.org/trans-health 查閱。"
+      "zh": "涵蓋全美50個州。許多提供者提供遠程醫療。請訪問 plannedparenthood.org/trans-health 查閱。",
+      "zh-cn": "涵盖全美50个州。许多提供者提供远程医疗。请访问 plannedparenthood.org/trans-health 查阅。"
     },
     "tags": [
       {
         "t": {
           "en": "🏳️‍⚧️ Trans Health",
-          "zh": "🏳️‍⚧️ 跨性別醫療"
+          "zh": "🏳️‍⚧️ 跨性別醫療",
+          "zh-cn": "🏳️‍⚧️ 跨性别医疗"
         },
         "c": "ct-health"
       },
       {
         "t": {
           "en": "🏥 HRT",
-          "zh": "🏥 荷爾蒙"
+          "zh": "🏥 荷爾蒙",
+          "zh-cn": "🏥 荷尔蒙"
         },
         "c": "ct-health"
       },
       {
         "t": {
           "en": "🇺🇸 National",
-          "zh": "🇺🇸 全美"
+          "zh": "🇺🇸 全美",
+          "zh-cn": "🇺🇸 全美"
         },
         "c": "ct-us"
       }
@@ -333,45 +381,52 @@ window.referenceData = [
     "urgent": false,
     "source": {
       "en": "Mosaic Resources",
-      "zh": "Mosaic 資源"
+      "zh": "Mosaic 資源",
+      "zh-cn": "Mosaic 资源"
     },
     "title": {
       "en": "🛂 Asylum & Immigration: Essential Resources",
-      "zh": "🛂 庇護與移民：必備資源"
+      "zh": "🛂 庇護與移民：必備資源",
+      "zh-cn": "🛂 庇护与移民：必备资源"
     },
     "summary": {
       "en": "Key organizations and step-by-step guides for LGBTQ+ asylum seekers. All information sourced from official websites.",
-      "zh": "為 LGBTQ+ 庇護尋求者提供的關鍵組織和逐步指南。所有信息來源於官方網站。"
+      "zh": "為 LGBTQ+ 庇護尋求者提供的關鍵組織和逐步指南。所有信息來源於官方網站。",
+      "zh-cn": "为 LGBTQ+ 庇护寻求者提供的关键组织和逐步指南。所有信息来源于官方网站。"
     },
     "full": {
-      "en": "**IMPORTANT**: All resources below are publicly available and sourced from official organization websites. Click links to verify current information.\n\n---\n\n**Immigration Equality** (USA)\n- Free legal services for LGBTQ+ and HIV+ immigrants\n- Official website: immigrationequality.org\n- **[→ Visit Official Site](https://www.immigrationequality.org)**\n- Source: Immigration Equality Official Website\n\n**Rainbow Railroad** (Global)\n- Emergency relocation for LGBTQ+ people fleeing persecution\n- Official website: rainbowrailroad.org\n- **[→ Visit Official Site](https://www.rainbowrailroad.org)**\n- Source: Rainbow Railroad Official Website\n\n**UNHCR LGBTI Guidance** (Global)\n- UN guidelines for LGBTQ+ refugee protection\n- **[→ Visit UNHCR](https://www.unhcr.org)**\n- Source: United Nations High Commissioner for Refugees\n\n---\n\n**Brief Asylum Process Guide** (Summary only - consult lawyer for your case):\n\n1. **Document Evidence**: Photos, messages, news articles proving persecution\n2. **Find Legal Help**: Contact Immigration Equality or local legal aid\n3. **Prepare Interview**: Practice explaining your fear credibly\n4. **Country Reports**: Get reports from ILGA World, Human Rights Watch\n5. **Support Letters**: From community members who know your situation\n\n**CRITICAL**: Do NOT pay smugglers. Contact official organizations first.\n\n---\n\n**Disclaimer**: This is a directory of public resources, not legal advice. Always consult a qualified immigration attorney.",
-      "zh": "**重要**：以下所有資源均為公開可用，來源於官方組織網站。點擊鏈接驗證當前信息。\n\n---\n\n**Immigration Equality**（美國）\n- 為 LGBTQ+ 和 HIV+ 移民提供免費法律服務\n- 官方網站：immigrationequality.org\n- **[→ 訪問官方網站](https://www.immigrationequality.org)**\n- 來源：Immigration Equality 官方網站\n\n**Rainbow Railroad**（全球）\n- 為逃離迫害的 LGBTQ+ 人士提供緊急搬遷\n- 官方網站：rainbowrailroad.org\n- **[→ 訪問官方網站](https://www.rainbowrailroad.org)**\n- 來源：Rainbow Railroad 官方網站\n\n**UNHCR LGBTI 指南**（全球）\n- 聯合國 LGBTQ+ 難民保護指南\n- **[→ 訪問 UNHCR](https://www.unhcr.org)**\n- 來源：聯合國難民署\n\n---\n\n**簡要庇護流程指南**（僅摘要 - 請就您的案件諮詢律師）：\n\n1. **記錄證據**：證明迫害的照片、消息、新聞文章\n2. **尋找法律幫助**：聯繫 Immigration Equality 或當地法律援助\n3. **準備面試**：練習可信地解釋您的恐懼\n4. **國家報告**：從 ILGA World、人權觀察獲取報告\n5. **支持信**：來自了解您情況的社區成員\n\n**關鍵**：不要付錢給蛇頭。首先聯繫官方組織。\n\n---\n\n**免責聲明**：這是公共資源目錄，不是法律建議。請始終諮詢合格的移民律師。"
+      "en": "**IMPORTANT**: All resources below are publicly available and sourced from official organization websites. Click links to verify current information.\n\n---\n\n**Immigration Equality** (USA)\n- Free legal services for LGBTQ+ and HIV+ immigrants\n- Official website: immigrationequality.org\n- **[→ Visit Official Site](https://www.immigrationequality.org)**\n- Source: Immigration Equality Official Website\n\n**Rainbow Railroad** (Global)\n- Emergency relocation for LGBTQ+ people fleeing persecution\n- Official website: rainbowrailroad.org\n- **[→ Visit Official Site](https://www.rainbowrailroad.org)**\n- Source: Rainbow Railroad Official Website\n\n**UNHCR LGBTI Guidance** (Global)\n- UN guidelines for LGBTQ+ refugee protection\n- **[→ Visit UNHCR](https://www.unhcr.org)**\n- Source: United Nations High Commissioner for Refugees\n\n---\n\n**Brief Asylum Process Guide** (Summary only - consult lawyer for your case):\n\n1. **Document Evidence**: Photos, messages, news articles proving persecution\n2. **Find Legal Help**: Contact Immigration Equality or local legal aid\n3. **Prepare Interview**: Practice explaining your fear credibly\n4. **Country Reports**: Get reports from ILGA World, Human Rights Watch\n5. **Support Letters**: From community members who know your situation\n\n**CRITICAL**: Do NOT pay smugglers. Contact official organizations first.\n\n---\n\n**Disclaimer**: This is a directory of public resources, not legal advice. Always consult a qualified immigration attorney.\n\n(The 'View source' button leads to this page's primary source: Immigration Equality)",
+      "zh": "⚠️ 以下資源均為公開可用、來源於官方組織網站；點擊各機構網址可驗證當前資訊。\n\n— 法律與安置機構 —\n\n◆ Immigration Equality（美國）\n　為 LGBTQ+ 和 HIV+ 移民提供免費法律服務。\n　immigrationequality.org\n\n◆ Rainbow Railroad（全球）\n　為逃離迫害的 LGBTQ+ 人士提供緊急搬遷。\n　rainbowrailroad.org\n\n◆ UNHCR 聯合國難民署 LGBTI 指南（全球）\n　聯合國 LGBTQ+ 難民保護指南。\n　unhcr.org\n\n— 簡要庇護流程（僅摘要，請就個案諮詢律師）—\n\n① 記錄證據：能證明迫害的照片、訊息、新聞報導\n② 尋找法律幫助：聯繫上述機構或當地法律援助\n③ 準備面談：練習清楚、可信地說明你的恐懼\n④ 國家報告：向 ILGA World、人權觀察取得報告\n⑤ 支持信：請了解你處境的社群成員撰寫\n\n關鍵提醒：不要付錢給人蛇／中介；請先聯繫官方組織。\n\n免責聲明：這是公共資源目錄，不是法律建議，請務必諮詢合格的移民律師。\n\n（「查看原文」按鈕將前往本頁主要信源：Immigration Equality）",
+      "zh-cn": "⚠️ 以下资源均为公开可用、来源于官方组织网站；点击各机构网址可验证当前资讯。\n\n— 法律与安置机构 —\n\n◆ Immigration Equality（美国）\n　为 LGBTQ+ 和 HIV+ 移民提供免费法律服务。\n　immigrationequality.org\n\n◆ Rainbow Railroad（全球）\n　为逃离迫害的 LGBTQ+ 人士提供紧急搬迁。\n　rainbowrailroad.org\n\n◆ UNHCR 联合国难民署 LGBTI 指南（全球）\n　联合国 LGBTQ+ 难民保护指南。\n　unhcr.org\n\n— 简要庇护流程（仅摘要，请就个案咨询律师）—\n\n① 记录证据：能证明迫害的照片、讯息、新闻报导\n② 寻找法律帮助：联系上述机构或当地法律援助\n③ 准备面谈：练习清楚、可信地说明你的恐惧\n④ 国家报告：向 ILGA World、人权观察取得报告\n⑤ 支持信：请了解你处境的社群成员撰写\n\n关键提醒：不要付钱给人蛇／中介；请先联系官方组织。\n\n免责声明：这是公共资源目录，不是法律建议，请务必咨询合格的移民律师。\n\n（「查看原文」按钮将前往本页主要信源：Immigration Equality）"
     },
     "tags": [
       {
         "t": {
           "en": "🧰 Toolkit",
-          "zh": "🧰 錦囊"
+          "zh": "🧰 錦囊",
+          "zh-cn": "🧰 锦囊"
         },
         "c": "ct-legal"
       },
       {
         "t": {
           "en": "🛂 Asylum",
-          "zh": "🛂 庇護"
+          "zh": "🛂 庇護",
+          "zh-cn": "🛂 庇护"
         },
         "c": "ct-legal"
       },
       {
         "t": {
           "en": "🌐 Global",
-          "zh": "🌐 全球"
+          "zh": "🌐 全球",
+          "zh-cn": "🌐 全球"
         },
         "c": "ct-all"
       }
     ],
     "color": "var(--glass-violet, #8a3ae8)",
-    "url": "",
+    "url": "https://www.immigrationequality.org",
     "sub": "compare"
   },
   {
@@ -382,45 +437,52 @@ window.referenceData = [
     "urgent": false,
     "source": {
       "en": "Mosaic Resources",
-      "zh": "Mosaic 資源"
+      "zh": "Mosaic 資源",
+      "zh-cn": "Mosaic 资源"
     },
     "title": {
       "en": "💊 Medical Resources: HRT, PrEP & Safe Healthcare",
-      "zh": "💊 醫療資源：HRT、PrEP 與安全醫療"
+      "zh": "💊 醫療資源：HRT、PrEP 與安全醫療",
+      "zh-cn": "💊 医疗资源：HRT、PrEP 与安全医疗"
     },
     "summary": {
       "en": "Where to access hormone therapy, HIV prevention, and LGBTQ+-affirming healthcare. All links verified from official sources.",
-      "zh": "如何獲得荷爾蒙治療、HIV 預防和 LGBTQ+ 友好醫療。所有鏈接均來自官方來源驗證。"
+      "zh": "如何獲得荷爾蒙治療、HIV 預防和 LGBTQ+ 友好醫療。所有鏈接均來自官方來源驗證。",
+      "zh-cn": "如何获得荷尔蒙治疗、HIV 预防和 LGBTQ+ 友好医疗。所有链接均来自官方来源验证。"
     },
     "full": {
-      "en": "**DISCLAIMER**: This is a public resource directory, not medical advice. Consult healthcare professionals for your specific situation.\n\n---\n\n**Hormone Replacement Therapy (HRT)**:\n\n**Planned Parenthood** (USA)\n- Informed consent HRT, no therapist letter required\n- **[→ Find Clinic](https://www.plannedparenthood.org)**\n- Source: Planned Parenthood Official Website\n\n**GenderGP** (Online, Global)\n- Telemedicine for trans healthcare\n- **[→ Visit GenderGP](https://www.gendergp.com)**\n- Source: GenderGP Official Site\n\n**56 Dean Street** (London, UK)\n- Free sexual health & gender services\n- **[→ Visit 56 Dean St](https://dean.st)**\n- Source: 56 Dean Street Clinic\n\n---\n\n**HIV Prevention (PrEP)**:\n\n**PrEPster** (Global Directory)\n- Find PrEP providers worldwide\n- **[→ Visit PrEPster](https://prepster.info)**\n- Source: PrEPster.info Public Database\n\n**NYC Sexual Health Clinics**\n- Free PrEP, no insurance needed\n- **[→ NYC Health](https://www1.nyc.gov/site/doh/services/sexual-health-clinics.page)**\n- Source: NYC Department of Health\n\n---\n\n**Crisis Support**:\n\n**Trevor Project** (USA)\n- 24/7 crisis support for LGBTQ+ youth\n- Phone: **1-866-488-7386**\n- **[→ TrevorProject.org](https://www.thetrevorproject.org)**\n- Source: Trevor Project Official\n\n**LGBT Foundation** (UK)\n- Helpline & counseling\n- **[→ Visit LGBT Foundation](https://lgbt.foundation)**\n- Source: LGBT Foundation UK\n\n---\n\n**Safety Tips**:\n- Verify clinic credentials before sharing personal info\n- For hostile countries: use encrypted messaging (Signal, WhatsApp)\n- Never buy hormones from unverified online sellers\n- Research reviews before choosing providers\n\n---\n\n**Found broken links or new resources?** Email: chaosxxcinema@outlook.com",
-      "zh": "**免責聲明**：這是公共資源目錄，不是醫療建議。請就您的具體情況諮詢醫療專業人員。\n\n---\n\n**荷爾蒙替代療法 (HRT)**：\n\n**計劃生育協會**（美國）\n- 知情同意 HRT，不需要治療師信\n- **[→ 查找診所](https://www.plannedparenthood.org)**\n- 來源：計劃生育協會官方網站\n\n**GenderGP**（在線，全球）\n- 跨性別醫療遠程醫療\n- **[→ 訪問 GenderGP](https://www.gendergp.com)**\n- 來源：GenderGP 官方網站\n\n**56 Dean Street**（倫敦，英國）\n- 免費性健康和性別服務\n- **[→ 訪問 56 Dean St](https://dean.st)**\n- 來源：56 Dean Street 診所\n\n---\n\n**HIV 預防 (PrEP)**：\n\n**PrEPster**（全球目錄）\n- 在全球範圍內查找 PrEP 提供者\n- **[→ 訪問 PrEPster](https://prepster.info)**\n- 來源：PrEPster.info 公共數據庫\n\n**紐約性健康診所**\n- 免費 PrEP，不需要保險\n- **[→ NYC Health](https://www1.nyc.gov/site/doh/services/sexual-health-clinics.page)**\n- 來源：紐約市衛生局\n\n---\n\n**危機支持**：\n\n**Trevor Project**（美國）\n- LGBTQ+ 青少年24/7危機支持\n- 電話：**1-866-488-7386**\n- **[→ TrevorProject.org](https://www.thetrevorproject.org)**\n- 來源：Trevor Project 官方\n\n**LGBT基金會**（英國）\n- 熱線和諮詢\n- **[→ 訪問 LGBT Foundation](https://lgbt.foundation)**\n- 來源：英國 LGBT 基金會\n\n---\n\n**安全提示**：\n- 在分享個人信息之前驗證診所資格\n- 對於敵對國家：使用加密消息（Signal、WhatsApp）\n- 永遠不要從未經驗證的在線賣家購買荷爾蒙\n- 選擇提供者前研究評論\n\n---\n\n**發現損壞的鏈接或新資源？** 電子郵件：chaosxxcinema@outlook.com"
+      "en": "**DISCLAIMER**: This is a public resource directory, not medical advice. Consult healthcare professionals for your specific situation.\n\n---\n\n**Hormone Replacement Therapy (HRT)**:\n\n**Planned Parenthood** (USA)\n- Informed consent HRT, no therapist letter required\n- **[→ Find Clinic](https://www.plannedparenthood.org)**\n- Source: Planned Parenthood Official Website\n\n**GenderGP** (Online, Global)\n- Telemedicine for trans healthcare\n- **[→ Visit GenderGP](https://www.gendergp.com)**\n- Source: GenderGP Official Site\n\n**56 Dean Street** (London, UK)\n- Free sexual health & gender services\n- **[→ Visit 56 Dean St](https://dean.st)**\n- Source: 56 Dean Street Clinic\n\n---\n\n**HIV Prevention (PrEP)**:\n\n**PrEPster** (Global Directory)\n- Find PrEP providers worldwide\n- **[→ Visit PrEPster](https://prepster.info)**\n- Source: PrEPster.info Public Database\n\n**NYC Sexual Health Clinics**\n- Free PrEP, no insurance needed\n- **[→ NYC Health](https://www1.nyc.gov/site/doh/services/sexual-health-clinics.page)**\n- Source: NYC Department of Health\n\n---\n\n**Crisis Support**:\n\n**Trevor Project** (USA)\n- 24/7 crisis support for LGBTQ+ youth\n- Phone: **1-866-488-7386**\n- **[→ TrevorProject.org](https://www.thetrevorproject.org)**\n- Source: Trevor Project Official\n\n**LGBT Foundation** (UK)\n- Helpline & counseling\n- **[→ Visit LGBT Foundation](https://lgbt.foundation)**\n- Source: LGBT Foundation UK\n\n---\n\n**Safety Tips**:\n- Verify clinic credentials before sharing personal info\n- For hostile countries: use encrypted messaging (Signal, WhatsApp)\n- Never buy hormones from unverified online sellers\n- Research reviews before choosing providers\n\n---\n\n**Found broken links or new resources?** Email: chaosxxcinema@outlook.com\n\n(The 'View source' button leads to this page's primary source: The Trevor Project)",
+      "zh": "免責聲明：這是公共資源目錄，不是醫療建議；請就你的具體情況諮詢醫療專業人員。\n\n— 荷爾蒙替代療法（HRT）—\n\n◆ Planned Parenthood 計劃生育協會（美國）\n　知情同意制 HRT，不需要治療師信件。\n　plannedparenthood.org\n\n◆ GenderGP（線上，全球）\n　跨性別醫療遠程服務。\n　gendergp.com\n\n◆ 56 Dean Street（英國倫敦）\n　免費性健康與性別服務，含跨性別 TransPlus。\n　dean.st\n\n— HIV 預防（PrEP）—\n\n◆ PrEPster（全球目錄）\n　在全球範圍查找 PrEP 提供者。\n　prepster.info\n\n◆ 紐約性健康診所（美國紐約）\n　免費 PrEP，不需要保險。\n　nyc.gov 衛生局性健康診所頁\n\n— 危機支持 —\n\n◆ The Trevor Project（美國）\n　LGBTQ+ 青少年 24/7 危機支持。\n　電話 1-866-488-7386　thetrevorproject.org\n\n◆ LGBT Foundation（英國）\n　熱線與諮詢。\n　lgbt.foundation\n\n— 安全提示 —\n\n· 分享個人資訊前，先驗證診所／提供者資格\n· 處境不安全時，使用加密通訊（Signal、WhatsApp）\n· 切勿向未經驗證的線上賣家購買荷爾蒙\n· 選擇提供者前先查看評價\n\n發現失效連結或想推薦新資源？來信：chaosxxcinema@outlook.com\n\n（「查看原文」按鈕將前往本頁主要信源：The Trevor Project）",
+      "zh-cn": "免责声明：这是公共资源目录，不是医疗建议；请就你的具体情况咨询医疗专业人员。\n\n— 荷尔蒙替代疗法（HRT）—\n\n◆ Planned Parenthood 计划生育协会（美国）\n　知情同意制 HRT，不需要治疗师信件。\n　plannedparenthood.org\n\n◆ GenderGP（线上，全球）\n　跨性别医疗远程服务。\n　gendergp.com\n\n◆ 56 Dean Street（英国伦敦）\n　免费性健康与性别服务，含跨性别 TransPlus。\n　dean.st\n\n— HIV 预防（PrEP）—\n\n◆ PrEPster（全球目录）\n　在全球范围查找 PrEP 提供者。\n　prepster.info\n\n◆ 纽约性健康诊所（美国纽约）\n　免费 PrEP，不需要保险。\n　nyc.gov 卫生局性健康诊所页\n\n— 危机支持 —\n\n◆ The Trevor Project（美国）\n　LGBTQ+ 青少年 24/7 危机支持。\n　电话 1-866-488-7386　thetrevorproject.org\n\n◆ LGBT Foundation（英国）\n　热线与咨询。\n　lgbt.foundation\n\n— 安全提示 —\n\n· 分享个人资讯前，先验证诊所／提供者资格\n· 处境不安全时，使用加密通讯（Signal、WhatsApp）\n· 切勿向未经验证的线上卖家购买荷尔蒙\n· 选择提供者前先查看评价\n\n发现失效连结或想推荐新资源？来信：chaosxxcinema@outlook.com\n\n（「查看原文」按钮将前往本页主要信源：The Trevor Project）"
     },
     "tags": [
       {
         "t": {
           "en": "🧰 Toolkit",
-          "zh": "🧰 錦囊"
+          "zh": "🧰 錦囊",
+          "zh-cn": "🧰 锦囊"
         },
         "c": "ct-health"
       },
       {
         "t": {
           "en": "💊 Medical",
-          "zh": "💊 醫療"
+          "zh": "💊 醫療",
+          "zh-cn": "💊 医疗"
         },
         "c": "ct-health"
       },
       {
         "t": {
           "en": "🌐 Global",
-          "zh": "🌐 全球"
+          "zh": "🌐 全球",
+          "zh-cn": "🌐 全球"
         },
         "c": "ct-all"
       }
     ],
     "color": "var(--glass-green, #3a9e5f)",
-    "url": "",
+    "url": "https://www.thetrevorproject.org",
     "sub": "sexual"
   },
   {
@@ -431,45 +493,52 @@ window.referenceData = [
     "urgent": false,
     "source": {
       "en": "Mosaic Resources",
-      "zh": "Mosaic 資源"
+      "zh": "Mosaic 資源",
+      "zh-cn": "Mosaic 资源"
     },
     "title": {
       "en": "⚖️ Legal Aid: Know Your Rights",
-      "zh": "⚖️ 法律援助：了解您的權利"
+      "zh": "⚖️ 法律援助：了解您的權利",
+      "zh-cn": "⚖️ 法律援助：了解您的权利"
     },
     "summary": {
       "en": "Free legal services, your rights in different countries, and what to do if arrested.",
-      "zh": "免費法律服務、不同國家的權利以及被捕時該怎麼辦。"
+      "zh": "免費法律服務、不同國家的權利以及被捕時該怎麼辦。",
+      "zh-cn": "免费法律服务、不同国家的权利以及被捕时该怎么办。"
     },
     "full": {
-      "en": "**Free Legal Services**:\n- **Lambda Legal** (USA): LGBTQ+ rights litigation\n- **ILGA World**: Country-by-country legal status maps (ilga.org)\n- **Human Rights Watch**: Documentation of abuses\n\n**Know Your Rights (USA)**:\n- You have the right to remain silent\n- You have the right to an attorney\n- Do NOT sign anything without legal counsel\n- Document badge numbers and incident details\n\n**Know Your Rights (UK)**:\n- You can refuse to answer questions without a solicitor\n- Police must tell you why you are being arrested\n- Free legal aid available for serious charges\n\n**If Arrested in Hostile Countries**:\n- Say NOTHING without an attorney\n- Contact your embassy immediately\n- Do NOT admit to being LGBTQ+ if unsafe\n- Memorize emergency contact numbers",
-      "zh": "**免費法律服務**：\n- **Lambda Legal** (美國)：LGBTQ+ 權利訴訟\n- **ILGA World**：按國家劃分的法律狀態地圖 (ilga.org)\n- **人權觀察**：虐待記錄\n\n**了解您的權利 (美國)**：\n- 您有權保持沉默\n- 您有權獲得律師\n- 不要在沒有法律顧問的情況下簽署任何東西\n- 記錄徽章號碼和事件細節\n\n**了解您的權利 (英國)**：\n- 您可以拒絕在沒有律師的情況下回答問題\n- 警察必須告訴您為什麼被逮捕\n- 嚴重指控可獲免費法律援助\n\n**如果在敵對國家被捕**：\n- 沒有律師什麼都不要說\n- 立即聯繫您的大使館\n- 如果不安全，不要承認是 LGBTQ+\n- 記住緊急聯繫電話"
+      "en": "**Free Legal Services**:\n- **Lambda Legal** (USA): LGBTQ+ rights litigation\n- **ILGA World**: Country-by-country legal status maps (ilga.org)\n- **Human Rights Watch**: Documentation of abuses\n\n**Know Your Rights (USA)**:\n- You have the right to remain silent\n- You have the right to an attorney\n- Do NOT sign anything without legal counsel\n- Document badge numbers and incident details\n\n**Know Your Rights (UK)**:\n- You can refuse to answer questions without a solicitor\n- Police must tell you why you are being arrested\n- Free legal aid available for serious charges\n\n**If Arrested in Hostile Countries**:\n- Say NOTHING without an attorney\n- Contact your embassy immediately\n- Do NOT admit to being LGBTQ+ if unsafe\n- Memorize emergency contact numbers\n\n(The 'View source' button leads to this page's primary source: Lambda Legal)",
+      "zh": "— 免費法律服務 —\n\n◆ Lambda Legal（美國）\n　LGBTQ+ 權利訴訟。\n　lambdalegal.org\n\n◆ ILGA World\n　按國家劃分的法律狀態地圖。\n　ilga.org\n\n◆ Human Rights Watch 人權觀察\n　虐待與迫害記錄。\n\n— 了解你的權利（美國）—\n\n· 你有權保持沉默\n· 你有權獲得律師\n· 沒有法律顧問在場時，不要簽署任何文件\n· 記下警員編號與事件細節\n\n— 了解你的權利（英國）—\n\n· 沒有律師時，你可以拒絕回答問題\n· 警方必須告知你被逮捕的原因\n· 嚴重指控可申請免費法律援助\n\n— 若在處境不安全的國家被捕 —\n\n· 沒有律師在場時什麼都不要說\n· 立即聯繫你的大使館\n· 若環境不安全，不要承認 LGBTQ+ 身份\n· 記住緊急聯絡電話\n\n免責聲明：以上為一般性資訊，不構成法律意見；請就個案諮詢合格律師。\n\n（「查看原文」按鈕將前往本頁主要信源：Lambda Legal）",
+      "zh-cn": "— 免费法律服务 —\n\n◆ Lambda Legal（美国）\n　LGBTQ+ 权利诉讼。\n　lambdalegal.org\n\n◆ ILGA World\n　按国家划分的法律状态地图。\n　ilga.org\n\n◆ Human Rights Watch 人权观察\n　虐待与迫害记录。\n\n— 了解你的权利（美国）—\n\n· 你有权保持沉默\n· 你有权获得律师\n· 没有法律顾问在场时，不要签署任何文件\n· 记下警员编号与事件细节\n\n— 了解你的权利（英国）—\n\n· 没有律师时，你可以拒绝回答问题\n· 警方必须告知你被逮捕的原因\n· 严重指控可申请免费法律援助\n\n— 若在处境不安全的国家被捕 —\n\n· 没有律师在场时什么都不要说\n· 立即联系你的大使馆\n· 若环境不安全，不要承认 LGBTQ+ 身份\n· 记住紧急联络电话\n\n免责声明：以上为一般性资讯，不构成法律意见；请就个案咨询合格律师。\n\n（「查看原文」按钮将前往本页主要信源：Lambda Legal）"
     },
     "tags": [
       {
         "t": {
           "en": "🧰 Toolkit",
-          "zh": "🧰 錦囊"
+          "zh": "🧰 錦囊",
+          "zh-cn": "🧰 锦囊"
         },
         "c": "ct-legal"
       },
       {
         "t": {
           "en": "⚖️ Legal",
-          "zh": "⚖️ 法律"
+          "zh": "⚖️ 法律",
+          "zh-cn": "⚖️ 法律"
         },
         "c": "ct-legal"
       },
       {
         "t": {
           "en": "🌐 Global",
-          "zh": "🌐 全球"
+          "zh": "🌐 全球",
+          "zh-cn": "🌐 全球"
         },
         "c": "ct-all"
       }
     ],
     "color": "var(--glass-red, #c8241f)",
-    "url": "",
+    "url": "https://www.lambdalegal.org",
     "sub": "legal"
   },
   {
@@ -480,45 +549,52 @@ window.referenceData = [
     "urgent": false,
     "source": {
       "en": "Mosaic Resources",
-      "zh": "Mosaic 資源"
+      "zh": "Mosaic 資源",
+      "zh-cn": "Mosaic 资源"
     },
     "title": {
       "en": "🏠 Housing & Emergency Shelter Resources",
-      "zh": "🏠 住房與緊急庇護所資源"
+      "zh": "🏠 住房與緊急庇護所資源",
+      "zh-cn": "🏠 住房与紧急庇护所资源"
     },
     "summary": {
       "en": "Global housing assistance, emergency shelters, and anti-discrimination resources for LGBTQ+ individuals.",
-      "zh": "為 LGBTQ+ 個人提供的全球住房援助、緊急庇護所和反歧視資源。"
+      "zh": "為 LGBTQ+ 個人提供的全球住房援助、緊急庇護所和反歧視資源。",
+      "zh-cn": "为 LGBTQ+ 个人提供的全球住房援助、紧急庇护所和反歧视资源。"
     },
     "full": {
-      "en": "**Emergency Shelters (Global)**:\n\n**Ali Forney Center** (New York, USA)\n- Largest LGBTQ+ youth shelter in the US\n- Website: aliforneycenter.org\n- Source: [Ali Forney Center Official Site]\n\n**Albert Kennedy Trust** (UK)\n- Housing support for LGBTQ+ youth 16-25\n- Website: akt.org.uk\n- Source: [Albert Kennedy Trust]\n\n**Covenant House** (Americas)\n- Youth shelters in USA, Canada, Latin America\n- LGBTQ+-affirming services\n- Website: covenanthouse.org\n- Source: [Covenant House International]\n\n**Housing Rights**:\n\n**Fair Housing Act** (USA): Protects against discrimination based on sexual orientation and gender identity in housing. Learn more: [HUD.gov - Fair Housing]\n\n**UK Equality Act 2010**: Prohibits housing discrimination. Source: [Gov.uk]\n\n**What To Do If Discriminated**:\n1. Document everything (emails, texts, recordings if legal)\n2. Contact local fair housing agency\n3. File complaint with government housing authority\n4. Seek legal aid (Lambda Legal, ACLU)\n\n**Long-Term Housing Programs**:\n\n**Housing Works** (NYC): Supportive housing for people with HIV/AIDS\n- Website: housingworks.org\n- Source: [Housing Works]\n\n**LGBTQ+ Housing Resources** (Global directory)\n- Website: lgbtqhousing.org\n- Source: [National LGBT Housing Coalition]\n\n**Safety Tips**:\n- Research landlord reviews before renting\n- Know your local housing discrimination laws\n- Join LGBTQ+ housing Facebook groups in your city\n- Consider roommate matching services\n\n*All information sourced from official organization websites and verified as of May 2026.*",
-      "zh": "**緊急庇護所（全球）**：\n\n**Ali Forney Center**（紐約，美國）\n- 美國最大的 LGBTQ+ 青少年庇護所\n- 網站：aliforneycenter.org\n- 來源：[Ali Forney Center 官方網站]\n\n**Albert Kennedy Trust**（英國）\n- 為 16-25 歲 LGBTQ+ 青少年提供住房支持\n- 網站：akt.org.uk\n- 來源：[Albert Kennedy Trust]\n\n**Covenant House**（美洲）\n- 美國、加拿大、拉丁美洲的青少年庇護所\n- 提供對 LGBTQ+ 友好的服務\n- 網站：covenanthouse.org\n- 來源：[Covenant House International]\n\n**住房權利**：\n\n**公平住房法案**（美國）：保護免受基於性取向和性別認同的住房歧視。了解更多：[HUD.gov - 公平住房]\n\n**英國平等法案 2010**：禁止住房歧視。來源：[Gov.uk]\n\n**如果遭受歧視該怎麼辦**：\n1. 記錄一切（電子郵件、短信、合法錄音）\n2. 聯繫當地公平住房機構\n3. 向政府住房管理局投訴\n4. 尋求法律援助（Lambda Legal、ACLU）\n\n**長期住房計劃**：\n\n**Housing Works**（紐約）：為 HIV/AIDS 患者提供支持性住房\n- 網站：housingworks.org\n- 來源：[Housing Works]\n\n**LGBTQ+ 住房資源**（全球目錄）\n- 網站：lgbtqhousing.org\n- 來源：[國家 LGBT 住房聯盟]\n\n**安全提示**：\n- 租房前研究房東評論\n- 了解當地住房歧視法律\n- 加入您所在城市的 LGBTQ+ 住房 Facebook 小組\n- 考慮室友配對服務\n\n*所有信息來源於官方組織網站，截至 2026 年 5 月已驗證。*"
+      "en": "**Emergency Shelters (Global)**:\n\n**Ali Forney Center** (New York, USA)\n- Largest LGBTQ+ youth shelter in the US\n- Website: aliforneycenter.org\n- Source: [Ali Forney Center Official Site]\n\n**Albert Kennedy Trust** (UK)\n- Housing support for LGBTQ+ youth 16-25\n- Website: akt.org.uk\n- Source: [Albert Kennedy Trust]\n\n**Covenant House** (Americas)\n- Youth shelters in USA, Canada, Latin America\n- LGBTQ+-affirming services\n- Website: covenanthouse.org\n- Source: [Covenant House International]\n\n**Housing Rights**:\n\n**Fair Housing Act** (USA): Protects against discrimination based on sexual orientation and gender identity in housing. Learn more: [HUD.gov - Fair Housing]\n\n**UK Equality Act 2010**: Prohibits housing discrimination. Source: [Gov.uk]\n\n**What To Do If Discriminated**:\n1. Document everything (emails, texts, recordings if legal)\n2. Contact local fair housing agency\n3. File complaint with government housing authority\n4. Seek legal aid (Lambda Legal, ACLU)\n\n**Long-Term Housing Programs**:\n\n**Housing Works** (NYC): Supportive housing for people with HIV/AIDS\n- Website: housingworks.org\n- Source: [Housing Works]\n\n**LGBTQ+ Housing Resources** (Global directory)\n- Website: lgbtqhousing.org\n- Source: [National LGBT Housing Coalition]\n\n**Safety Tips**:\n- Research landlord reviews before renting\n- Know your local housing discrimination laws\n- Join LGBTQ+ housing Facebook groups in your city\n- Consider roommate matching services\n\n*All information sourced from official organization websites and verified as of May 2026.*\n\n(The 'View source' button leads to this page's primary source: Ali Forney Center)",
+      "zh": "— 緊急庇護所 —\n\n◆ Ali Forney Center（美國紐約）\n　全美最大的 LGBTQ+ 青少年庇護所，24 小時服務。\n　aliforneycenter.org\n\n◆ Albert Kennedy Trust / akt（英國）\n　為 16–25 歲 LGBTQ+ 青少年提供住房支持。\n　akt.org.uk\n\n◆ Covenant House（美洲）\n　美國、加拿大、拉丁美洲的青少年庇護所，對 LGBTQ+ 友善。\n　covenanthouse.org\n\n— 住房權利 —\n\n◆ 公平住房法案（美國）\n　禁止基於性取向與性別認同的住房歧視。資訊見 HUD.gov。\n\n◆ 平等法案 2010（英國）\n　禁止住房歧視。資訊見 gov.uk。\n\n遭遇歧視怎麼辦：\n① 記錄一切（電郵、簡訊、合法錄音）\n② 聯繫當地公平住房機構\n③ 向政府住房管理部門投訴\n④ 尋求法律援助（Lambda Legal、ACLU）\n\n— 長期住房 —\n\n◆ Housing Works（美國紐約）\n　為 HIV／AIDS 群體提供支持性住房。\n　housingworks.org\n\n— 安全提示 —\n\n· 租屋前查看房東評價\n· 了解當地住房反歧視法律\n· 加入所在城市的 LGBTQ+ 住房社群\n· 考慮可信的室友配對服務\n\n註：以上資訊來源於各官方組織網站。各機構網址請於瀏覽器自行開啟驗證。\n\n（「查看原文」按鈕將前往本頁主要信源：Ali Forney Center）",
+      "zh-cn": "— 紧急庇护所 —\n\n◆ Ali Forney Center（美国纽约）\n　全美最大的 LGBTQ+ 青少年庇护所，24 小时服务。\n　aliforneycenter.org\n\n◆ Albert Kennedy Trust / akt（英国）\n　为 16–25 岁 LGBTQ+ 青少年提供住房支持。\n　akt.org.uk\n\n◆ Covenant House（美洲）\n　美国、加拿大、拉丁美洲的青少年庇护所，对 LGBTQ+ 友善。\n　covenanthouse.org\n\n— 住房权利 —\n\n◆ 公平住房法案（美国）\n　禁止基于性取向与性别认同的住房歧视。资讯见 HUD.gov。\n\n◆ 平等法案 2010（英国）\n　禁止住房歧视。资讯见 gov.uk。\n\n遭遇歧视怎么办：\n① 记录一切（电邮、简讯、合法录音）\n② 联系当地公平住房机构\n③ 向政府住房管理部门投诉\n④ 寻求法律援助（Lambda Legal、ACLU）\n\n— 长期住房 —\n\n◆ Housing Works（美国纽约）\n　为 HIV／AIDS 群体提供支持性住房。\n　housingworks.org\n\n— 安全提示 —\n\n· 租屋前查看房东评价\n· 了解当地住房反歧视法律\n· 加入所在城市的 LGBTQ+ 住房社群\n· 考虑可信的室友配对服务\n\n注：以上资讯来源于各官方组织网站。各机构网址请于浏览器自行开启验证。\n\n（「查看原文」按钮将前往本页主要信源：Ali Forney Center）"
     },
     "tags": [
       {
         "t": {
           "en": "🧰 Toolkit",
-          "zh": "🧰 錦囊"
+          "zh": "🧰 錦囊",
+          "zh-cn": "🧰 锦囊"
         },
         "c": "ct-health"
       },
       {
         "t": {
           "en": "🏠 Housing",
-          "zh": "🏠 住房"
+          "zh": "🏠 住房",
+          "zh-cn": "🏠 住房"
         },
         "c": "ct-health"
       },
       {
         "t": {
           "en": "🌐 Global",
-          "zh": "🌐 全球"
+          "zh": "🌐 全球",
+          "zh-cn": "🌐 全球"
         },
         "c": "ct-all"
       }
     ],
     "color": "var(--glass-red, #c8241f)",
-    "url": "",
+    "url": "https://www.aliforneycenter.org",
     "sub": "crisis"
   },
   {
@@ -1790,5 +1866,657 @@ window.referenceData = [
     "color": "var(--glass-orange, #f07c3a)",
     "url": "#guest",
     "sub": "all"
+  },
+  {
+    "id": 900001,
+    "cat": "emergency",
+    "country": "us",
+    "date": "2026-06-12",
+    "urgent": false,
+    "evergreen": true,
+    "source": {
+      "en": "Immigration Equality",
+      "zh": "Immigration Equality",
+      "zh-cn": "Immigration Equality"
+    },
+    "title": {
+      "en": "Immigration Equality",
+      "zh": "Immigration Equality（移民平等）",
+      "zh-cn": "Immigration Equality（移民平等）"
+    },
+    "summary": {
+      "en": "The largest LGBTQ+ immigrant rights organization in the US, offering free legal services to LGBTQ and HIV-positive asylum seekers.",
+      "zh": "全美最大的 LGBTQ+ 移民權利組織，為性少數及 HIV 陽性庇護申請者提供免費法律服務。",
+      "zh-cn": "全美最大的 LGBTQ+ 移民权利组织，为性少数及 HIV 阳性庇护申请者提供免费法律服务。"
+    },
+    "full": {
+      "en": "[Main services] Free legal services for those fleeing persecution based on sexual orientation, gender identity, or HIV status; has won asylum for hundreds of LGBTQ+ immigrants and connects 750+ people a year with pro bono attorneys. Also runs a detention hotline and helps prepare credible-fear interviews and asylum hearings.\n\n[Who it's for] LGBTQ+/HIV-positive asylum seekers and binational couples; confidential online intake form available.\n\n[Website] immigrationequality.org",
+      "zh": "【主要服務】為因性取向、性別認同或 HIV 狀態逃離迫害的人提供免費法律服務，已為數百名 LGBTQ+ 移民贏得庇護；每年為超過 750 人對接無償律師，並設有被拘留者求助管道，協助準備可信恐懼面談與庇護聽證。\n\n【適合誰】LGBTQ+／HIV 陽性的庇護申請人、雙國籍伴侶；提供線上保密諮詢表單。\n\n【官網】immigrationequality.org",
+      "zh-cn": "【主要服务】为因性取向、性别认同或 HIV 状态逃离迫害的人提供免费法律服务，已为数百名 LGBTQ+ 移民赢得庇护；每年为超过 750 人对接无偿律师，并设有被拘留者求助管道，协助准备可信恐惧面谈与庇护听证。\n\n【适合谁】LGBTQ+／HIV 阳性的庇护申请人、双国籍伴侣；提供在线保密咨询表单。\n\n【官网】immigrationequality.org"
+    },
+    "tags": [
+      {
+        "t": {
+          "en": "⚖️ Legal Aid",
+          "zh": "⚖️ 法律援助",
+          "zh-cn": "⚖️ 法律援助"
+        },
+        "c": "ct-legal"
+      },
+      {
+        "t": {
+          "en": "🇺🇸 US",
+          "zh": "🇺🇸 美國",
+          "zh-cn": "🇺🇸 美国"
+        },
+        "c": "ct-us"
+      },
+      {
+        "t": {
+          "en": "🆓 Free",
+          "zh": "🆓 免費",
+          "zh-cn": "🆓 免费"
+        },
+        "c": "ct-free"
+      }
+    ],
+    "color": "var(--glass-violet)",
+    "url": "https://immigrationequality.org",
+    "sub": "legal"
+  },
+  {
+    "id": 900002,
+    "cat": "emergency",
+    "country": "us",
+    "date": "2026-06-12",
+    "urgent": false,
+    "evergreen": true,
+    "source": {
+      "en": "National Immigrant Justice Center",
+      "zh": "NIJC 國家移民正義中心",
+      "zh-cn": "NIJC 国家移民正义中心"
+    },
+    "title": {
+      "en": "National Immigrant Justice Center (NIJC)",
+      "zh": "國家移民正義中心（NIJC）",
+      "zh-cn": "国家移民正义中心（NIJC）"
+    },
+    "summary": {
+      "en": "Provides legal services to low-income LGBT and HIV-positive immigrants; runs an immigration court helpdesk.",
+      "zh": "為低收入 LGBT 及 HIV 陽性移民提供法律服務，設有移民法庭求助專線。",
+      "zh-cn": "为低收入 LGBT 及 HIV 阳性移民提供法律服务，设有移民法庭求助专线。"
+    },
+    "full": {
+      "en": "[Main services] LGBTQ+ Immigrant Rights Initiative covering asylum, detained individuals, removal defense and appeals; runs an immigration court helpdesk and sends asylum documentation packets to detainees.\n\n[Who it's for] Low-income LGBT/HIV-positive immigrants; those above income guidelines are referred to private attorneys.\n\n[Website] immigrantjustice.org",
+      "zh": "【主要服務】LGBTQ+ 移民權利倡議，服務庇護申請、被拘留者、被遣返辯護與上訴；設有移民法庭服務專線，並為被拘留者提供庇護資料包。\n\n【適合誰】低收入 LGBT／HIV 陽性移民；收入超標者會被轉介私人律師。\n\n【官網】immigrantjustice.org",
+      "zh-cn": "【主要服务】LGBTQ+ 移民权利倡议，服务庇护申请、被拘留者、被遣返辩护与上诉；设有移民法庭服务专线，并为被拘留者提供庇护资料包。\n\n【适合谁】低收入 LGBT／HIV 阳性移民；收入超标者会被转介私人律师。\n\n【官网】immigrantjustice.org"
+    },
+    "tags": [
+      {
+        "t": {
+          "en": "⚖️ Legal Aid",
+          "zh": "⚖️ 法律援助",
+          "zh-cn": "⚖️ 法律援助"
+        },
+        "c": "ct-legal"
+      },
+      {
+        "t": {
+          "en": "🇺🇸 US",
+          "zh": "🇺🇸 美國",
+          "zh-cn": "🇺🇸 美国"
+        },
+        "c": "ct-us"
+      },
+      {
+        "t": {
+          "en": "🆓 Free",
+          "zh": "🆓 免費",
+          "zh-cn": "🆓 免费"
+        },
+        "c": "ct-free"
+      }
+    ],
+    "color": "var(--glass-violet)",
+    "url": "https://immigrantjustice.org/for-immigrants/services/legal-services-for-lgbtq-immigrants",
+    "sub": "legal"
+  },
+  {
+    "id": 900003,
+    "cat": "emergency",
+    "country": "us",
+    "date": "2026-06-12",
+    "urgent": false,
+    "evergreen": true,
+    "source": {
+      "en": "Oasis Legal Services",
+      "zh": "Oasis Legal Services",
+      "zh-cn": "Oasis Legal Services"
+    },
+    "title": {
+      "en": "Oasis Legal Services",
+      "zh": "Oasis Legal Services",
+      "zh-cn": "Oasis Legal Services"
+    },
+    "summary": {
+      "en": "A legal nonprofit for low-income LGBTQ+ immigrants, supporting asylum, residency, citizenship, and family petitions.",
+      "zh": "面向低收入 LGBTQ+ 移民的法律非營利組織，支持庇護、居留、入籍與家庭申請。",
+      "zh-cn": "面向低收入 LGBTQ+ 移民的法律非营利组织，支持庇护、居留、入籍与家庭申请。"
+    },
+    "full": {
+      "en": "[Main services] Helps low-income LGBTQ+ immigrants with asylum, residency, citizenship, and family petitions; provides safety guidance for interactions with ICE.\n\n[Who it's for] Low-income queer and trans immigrants.\n\n[Website] oasislegalservices.org",
+      "zh": "【主要服務】為低收入 LGBTQ+ 移民提供庇護、居留、入籍及家庭團聚申請協助，並提供與 ICE 互動時的安全指引。\n\n【適合誰】低收入的酷兒與跨性別移民。\n\n【官網】oasislegalservices.org",
+      "zh-cn": "【主要服务】为低收入 LGBTQ+ 移民提供庇护、居留、入籍及家庭团聚申请协助，并提供与 ICE 互动时的安全指引。\n\n【适合谁】低收入的酷儿与跨性别移民。\n\n【官网】oasislegalservices.org"
+    },
+    "tags": [
+      {
+        "t": {
+          "en": "⚖️ Legal Aid",
+          "zh": "⚖️ 法律援助",
+          "zh-cn": "⚖️ 法律援助"
+        },
+        "c": "ct-legal"
+      },
+      {
+        "t": {
+          "en": "🇺🇸 US",
+          "zh": "🇺🇸 美國",
+          "zh-cn": "🇺🇸 美国"
+        },
+        "c": "ct-us"
+      },
+      {
+        "t": {
+          "en": "🆓 Low-income",
+          "zh": "🆓 低收入",
+          "zh-cn": "🆓 低收入"
+        },
+        "c": "ct-free"
+      }
+    ],
+    "color": "var(--glass-violet)",
+    "url": "https://www.oasislegalservices.org",
+    "sub": "legal"
+  },
+  {
+    "id": 900004,
+    "cat": "emergency",
+    "country": "us",
+    "date": "2026-06-12",
+    "urgent": false,
+    "evergreen": true,
+    "source": {
+      "en": "Los Angeles LGBT Center",
+      "zh": "洛杉磯 LGBT 中心",
+      "zh-cn": "洛杉矶 LGBT 中心"
+    },
+    "title": {
+      "en": "Los Angeles LGBT Center — Immigration Law Project",
+      "zh": "洛杉磯 LGBT 中心 · 移民法律項目",
+      "zh-cn": "洛杉矶 LGBT 中心 · 移民法律项目"
+    },
+    "summary": {
+      "en": "Offers legal consultations, court representation (including asylum/refugee law), and removal defense for detainees; fully confidential.",
+      "zh": "提供法律諮詢、出庭代理（含庇護／難民法）及被拘留者遣返辯護，全程保密。",
+      "zh-cn": "提供法律咨询、出庭代理（含庇护／难民法）及被拘留者遣返辩护，全程保密。"
+    },
+    "full": {
+      "en": "[Main services] The Immigration Law Project offers legal consultations, representation before Immigration Court and USCIS, applications for asylum / withholding of removal / Convention Against Torture protection, removal defense for detainees, and work permits; intake starts by phone and all legal services are confidential.\n\n[Who it's for] LGBTQ+ community members fleeing persecution, especially in the LA area.\n\n[Website] lalgbtcenter.org",
+      "zh": "【主要服務】移民法律項目提供法律諮詢、移民法庭與 USCIS 代理、庇護與「禁止遣返」及《禁止酷刑公約》保護申請、被拘留者遣返辯護、工作許可申請等；以電話接案開始，所有法律服務保密。\n\n【適合誰】逃離迫害的 LGBTQ+ 社群成員，尤其洛杉磯地區。\n\n【官網】lalgbtcenter.org",
+      "zh-cn": "【主要服务】移民法律项目提供法律咨询、移民法庭与 USCIS 代理、庇护与「禁止遣返」及《禁止酷刑公约》保护申请、被拘留者遣返辩护、工作许可申请等；以电话接案开始，所有法律服务保密。\n\n【适合谁】逃离迫害的 LGBTQ+ 社群成员，尤其洛杉矶地区。\n\n【官网】lalgbtcenter.org"
+    },
+    "tags": [
+      {
+        "t": {
+          "en": "⚖️ Legal Aid",
+          "zh": "⚖️ 法律援助",
+          "zh-cn": "⚖️ 法律援助"
+        },
+        "c": "ct-legal"
+      },
+      {
+        "t": {
+          "en": "🇺🇸 US",
+          "zh": "🇺🇸 美國",
+          "zh-cn": "🇺🇸 美国"
+        },
+        "c": "ct-us"
+      },
+      {
+        "t": {
+          "en": "🔒 Confidential",
+          "zh": "🔒 保密",
+          "zh-cn": "🔒 保密"
+        },
+        "c": "ct-free"
+      }
+    ],
+    "color": "var(--glass-violet)",
+    "url": "https://lalgbtcenter.org/services/legal-services/immigrant-legal-services",
+    "sub": "legal"
+  },
+  {
+    "id": 900005,
+    "cat": "emergency",
+    "country": "us",
+    "date": "2026-06-12",
+    "urgent": false,
+    "evergreen": true,
+    "source": {
+      "en": "Immigrant Legal Resource Center",
+      "zh": "ILRC 移民法律資源中心",
+      "zh-cn": "ILRC 移民法律资源中心"
+    },
+    "title": {
+      "en": "Immigrant Legal Resource Center (ILRC)",
+      "zh": "移民法律資源中心（ILRC）",
+      "zh-cn": "移民法律资源中心（ILRC）"
+    },
+    "summary": {
+      "en": "Provides training and resources for legal practitioners serving LGBTQ+ immigrants (for attorneys, not direct intake).",
+      "zh": "為服務 LGBTQ+ 移民的法律從業者提供培訓與資源（面向律師，非直接接案）。",
+      "zh-cn": "为服务 LGBTQ+ 移民的法律从业者提供培训与资源（面向律师，非直接接案）。"
+    },
+    "full": {
+      "en": "[Main services] Focuses on training attorneys to serve LGBTQ+ immigrants competently, covering same-sex binational marriage petitions, asylum based on gender identity/orientation, and defense strategies for detainees; publishes the 'LGBTQ Immigration' practice manual.\n\n[Who it's for] Attorneys and legal workers — if you already have a lawyer, you can point them to this resource.\n\n[Website] ilrc.org",
+      "zh": "【主要服務】側重提升律師服務 LGBTQ+ 移民的專業能力，涵蓋同性雙國籍伴侶婚姻申請、基於性別認同／性取向的庇護、被拘留者辯護策略；出版《LGBTQ Immigration》實務手冊。\n\n【適合誰】律師與法律工作者——若你已有律師，可請其參考此資源。\n\n【官網】ilrc.org",
+      "zh-cn": "【主要服务】侧重提升律师服务 LGBTQ+ 移民的专业能力，涵盖同性双国籍伴侣婚姻申请、基于性别认同／性取向的庇护、被拘留者辩护策略；出版《LGBTQ Immigration》实务手册。\n\n【适合谁】律师与法律工作者——若你已有律师，可请其参考此资源。\n\n【官网】ilrc.org"
+    },
+    "tags": [
+      {
+        "t": {
+          "en": "⚖️ For Lawyers",
+          "zh": "⚖️ 律師資源",
+          "zh-cn": "⚖️ 律师资源"
+        },
+        "c": "ct-legal"
+      },
+      {
+        "t": {
+          "en": "🇺🇸 US",
+          "zh": "🇺🇸 美國",
+          "zh-cn": "🇺🇸 美国"
+        },
+        "c": "ct-us"
+      }
+    ],
+    "color": "var(--glass-violet)",
+    "url": "https://www.ilrc.org/lgbt-immigrant-rights",
+    "sub": "legal"
+  },
+  {
+    "id": 900101,
+    "cat": "emergency",
+    "country": "us",
+    "date": "2026-06-12",
+    "urgent": false,
+    "evergreen": true,
+    "source": {
+      "en": "Chinese Rainbow Network (CRN)",
+      "zh": "華人彩虹聯盟 CRN",
+      "zh-cn": "华人彩虹联盟 CRN"
+    },
+    "title": {
+      "en": "Chinese Rainbow Network (CRN)",
+      "zh": "華人彩虹聯盟（CRN）",
+      "zh-cn": "华人彩虹联盟（CRN）"
+    },
+    "summary": {
+      "en": "The largest overseas Chinese LGBTQ+ organization, and the only US-registered nonprofit dedicated to Chinese-speaking LGBTQ+ people.",
+      "zh": "海外最大的華人性少數組織，唯一在美國註冊的專門服務華人 LGBTQ+ 的非營利組織。",
+      "zh-cn": "海外最大的华人性少数组织，唯一在美国注册的专门服务华人 LGBTQ+ 的非营利组织。"
+    },
+    "full": {
+      "en": "[Main services] Founded in 1996, serving Chinese sexual-minority communities worldwide; runs a peer-support hotline for overseas Chinese LGBTQ+ people and organizes community events and mutual-aid networks.\n\n[Who it's for] Overseas Chinese-speaking LGBTQ+ community members; communicates in Chinese.\n\n[Website] www.crn.ong",
+      "zh": "【主要服務】始創於 1996 年，面向全球華人性少數社群，運行面向海外華人 LGBTQ+ 的同伴支持熱線，並組織社群活動與互助網絡。\n\n【適合誰】海外華語 LGBTQ+ 社群成員；以中文溝通。\n\n【官網】www.crn.ong",
+      "zh-cn": "【主要服务】始创于 1996 年，面向全球华人性少数社群，运行面向海外华人 LGBTQ+ 的同伴支持热线，并组织社群活动与互助网络。\n\n【适合谁】海外华语 LGBTQ+ 社群成员；以中文沟通。\n\n【官网】www.crn.ong"
+    },
+    "tags": [
+      {
+        "t": {
+          "en": "🌈 Community",
+          "zh": "🌈 社群",
+          "zh-cn": "🌈 社群"
+        },
+        "c": "ct-free"
+      },
+      {
+        "t": {
+          "en": "🀄 Chinese",
+          "zh": "🀄 華人",
+          "zh-cn": "🀄 华人"
+        },
+        "c": "ct-cn"
+      },
+      {
+        "t": {
+          "en": "📞 Hotline",
+          "zh": "📞 熱線",
+          "zh-cn": "📞 热线"
+        },
+        "c": "ct-event"
+      }
+    ],
+    "color": "var(--glass-teal)",
+    "url": "https://www.crn.ong",
+    "sub": "community"
+  },
+  {
+    "id": 900102,
+    "cat": "emergency",
+    "country": "us",
+    "date": "2026-06-12",
+    "urgent": false,
+    "evergreen": true,
+    "source": {
+      "en": "GAPIMNY",
+      "zh": "GAPIMNY",
+      "zh-cn": "GAPIMNY"
+    },
+    "title": {
+      "en": "GAPIMNY — Empowering Queer & Trans Asian Pacific Islanders",
+      "zh": "GAPIMNY · 紐約酷兒亞太裔",
+      "zh-cn": "GAPIMNY · 纽约酷儿亚太裔"
+    },
+    "summary": {
+      "en": "A New York organization empowering queer and trans Asian Pacific Islanders, founded in 1990.",
+      "zh": "1990 年創立的紐約酷兒及跨性別亞太裔賦權組織。",
+      "zh-cn": "1990 年创立的纽约酷儿及跨性别亚太裔赋权组织。"
+    },
+    "full": {
+      "en": "[Main services] Empowers queer and trans Asian Pacific Islanders through advocacy, educational programs, and community events; offers connection and a sense of belonging.\n\n[Who it's for] Queer/trans Asian Pacific Islanders in the NY area, including Chinese-speaking members.\n\n[Website] linktr.ee/gapimny (official links & Instagram)",
+      "zh": "【主要服務】通過倡導、教育項目和社群活動，賦權酷兒與跨性別亞太裔；提供社群連結與歸屬空間。\n\n【適合誰】紐約地區的酷兒／跨性別亞太裔，包括華語社群成員。\n\n【官網】linktr.ee/gapimny（含官方各連結與 Instagram）",
+      "zh-cn": "【主要服务】通过倡导、教育项目和社群活动，赋权酷儿与跨性别亚太裔；提供社群连结与归属空间。\n\n【适合谁】纽约地区的酷儿／跨性别亚太裔，包括华语社群成员。\n\n【官网】linktr.ee/gapimny（含官方各链接与 Instagram）"
+    },
+    "tags": [
+      {
+        "t": {
+          "en": "🌈 Community",
+          "zh": "🌈 社群",
+          "zh-cn": "🌈 社群"
+        },
+        "c": "ct-free"
+      },
+      {
+        "t": {
+          "en": "🇺🇸 NYC",
+          "zh": "🇺🇸 紐約",
+          "zh-cn": "🇺🇸 纽约"
+        },
+        "c": "ct-us"
+      }
+    ],
+    "color": "var(--glass-teal)",
+    "url": "https://linktr.ee/gapimny",
+    "sub": "community"
+  },
+  {
+    "id": 900103,
+    "cat": "emergency",
+    "country": "us",
+    "date": "2026-06-12",
+    "urgent": false,
+    "evergreen": true,
+    "source": {
+      "en": "Q-Wave",
+      "zh": "Q-Wave",
+      "zh-cn": "Q-Wave"
+    },
+    "title": {
+      "en": "Q-Wave",
+      "zh": "Q-Wave",
+      "zh-cn": "Q-Wave"
+    },
+    "summary": {
+      "en": "A New York grassroots organization for Asian LBTQ women, nonbinary, and trans communities.",
+      "zh": "面向亞裔女同志、雙性戀、跨性別與非二元社群的紐約草根組織。",
+      "zh-cn": "面向亚裔女同志、双性恋、跨性别与非二元社群的纽约草根组织。"
+    },
+    "full": {
+      "en": "[Main services] A grassroots community group offering gatherings, support, and space for Asian LBTQ women, nonbinary and trans people; maintains a member mailing list.\n\n[Who it's for] Asian LBTQ+ women and nonbinary community members in the NY area.\n\n[Website] www.q-wave.org",
+      "zh": "【主要服務】草根社群組織，為亞裔女同志、雙性戀、跨性別及非二元者提供聚會、支持與社群空間；設有成員郵件列表。\n\n【適合誰】紐約地區亞裔 LBTQ＋女性與非二元社群成員。\n\n【官網】www.q-wave.org",
+      "zh-cn": "【主要服务】草根社群组织，为亚裔女同志、双性恋、跨性别及非二元者提供聚会、支持与社群空间；设有成员邮件列表。\n\n【适合谁】纽约地区亚裔 LBTQ＋女性与非二元社群成员。\n\n【官网】www.q-wave.org"
+    },
+    "tags": [
+      {
+        "t": {
+          "en": "🌈 Community",
+          "zh": "🌈 社群",
+          "zh-cn": "🌈 社群"
+        },
+        "c": "ct-free"
+      },
+      {
+        "t": {
+          "en": "🇺🇸 NYC",
+          "zh": "🇺🇸 紐約",
+          "zh-cn": "🇺🇸 纽约"
+        },
+        "c": "ct-us"
+      }
+    ],
+    "color": "var(--glass-teal)",
+    "url": "https://www.q-wave.org",
+    "sub": "community"
+  },
+  {
+    "id": 900104,
+    "cat": "emergency",
+    "country": "us",
+    "date": "2026-06-12",
+    "urgent": false,
+    "evergreen": true,
+    "source": {
+      "en": "The Center (NYC)",
+      "zh": "紐約 LGBT 中心",
+      "zh-cn": "纽约 LGBT 中心"
+    },
+    "title": {
+      "en": "The LGBT Community Center (The Center, NYC)",
+      "zh": "紐約 LGBT 社區中心（The Center）",
+      "zh-cn": "纽约 LGBT 社区中心（The Center）"
+    },
+    "summary": {
+      "en": "NYC's LGBT Community Center, founded in 1983, welcoming 300,000+ visitors a year with comprehensive services.",
+      "zh": "1983 年成立的紐約 LGBT 社區中心，每年接待逾 30 萬訪客，提供全方位社群服務。",
+      "zh-cn": "1983 年成立的纽约 LGBT 社区中心，每年接待逾 30 万访客，提供全方位社群服务。"
+    },
+    "full": {
+      "en": "[Main services] Health and mental-health services, family and youth programs, career development, recovery (substance-use) services, arts and culture events, and a free-internet CyberCenter; located in Manhattan's West Village, open year-round.\n\n[Who it's for] All LGBTQ+ community members in the NY area; low membership fee (~$35/yr).\n\n[Website] gaycenter.org",
+      "zh": "【主要服務】提供健康與心理服務、家庭與青年項目、職業發展、復元（戒癮）服務、藝術文化活動，以及免費上網的 CyberCenter；位於曼哈頓西村，全年開放。\n\n【適合誰】紐約地區所有 LGBTQ+ 社群成員；會員費低（約 $35/年）。\n\n【官網】gaycenter.org",
+      "zh-cn": "【主要服务】提供健康与心理服务、家庭与青年项目、职业发展、复元（戒瘾）服务、艺术文化活动，以及免费上网的 CyberCenter；位于曼哈顿西村，全年开放。\n\n【适合谁】纽约地区所有 LGBTQ+ 社群成员；会员费低（约 $35/年）。\n\n【官网】gaycenter.org"
+    },
+    "tags": [
+      {
+        "t": {
+          "en": "🌈 Community",
+          "zh": "🌈 社群",
+          "zh-cn": "🌈 社群"
+        },
+        "c": "ct-free"
+      },
+      {
+        "t": {
+          "en": "🇺🇸 NYC",
+          "zh": "🇺🇸 紐約",
+          "zh-cn": "🇺🇸 纽约"
+        },
+        "c": "ct-us"
+      }
+    ],
+    "color": "var(--glass-teal)",
+    "url": "https://gaycenter.org",
+    "sub": "community"
+  },
+  {
+    "id": 900105,
+    "cat": "emergency",
+    "country": "us",
+    "date": "2026-06-12",
+    "urgent": false,
+    "evergreen": true,
+    "source": {
+      "en": "Apicha Community Health Center",
+      "zh": "APICHA 社區健康中心",
+      "zh-cn": "APICHA 社区健康中心"
+    },
+    "title": {
+      "en": "Apicha Community Health Center",
+      "zh": "APICHA 社區健康中心",
+      "zh-cn": "APICHA 社区健康中心"
+    },
+    "summary": {
+      "en": "A NYC community health center for Asian & Pacific Islanders, offering HIV/sexual health and trans-affirming care.",
+      "zh": "紐約亞太裔社區健康中心，提供 HIV／性健康及跨性別友善醫療服務。",
+      "zh-cn": "纽约亚太裔社区健康中心，提供 HIV／性健康及跨性别友善医疗服务。"
+    },
+    "full": {
+      "en": "[Main services] Grew out of an Asian & Pacific Islander HIV coalition; provides primary care, HIV prevention and treatment (including PrEP), sexual health, and trans-affirming care regardless of immigration status or ability to pay.\n\n[Who it's for] Asian & Pacific Islander and immigrant communities, especially those needing sexual-health/trans care.\n\n[Website] apicha.org",
+      "zh": "【主要服務】源於亞太裔愛滋防治聯盟，提供初級醫療、HIV 預防與治療（含 PrEP）、性健康及跨性別友善醫療；服務不論身份與支付能力。\n\n【適合誰】亞太裔及移民社群，尤其需要性健康／跨性別醫療者。\n\n【官網】apicha.org",
+      "zh-cn": "【主要服务】源于亚太裔艾滋防治联盟，提供初级医疗、HIV 预防与治疗（含 PrEP）、性健康及跨性别友善医疗；服务不论身份与支付能力。\n\n【适合谁】亚太裔及移民社群，尤其需要性健康／跨性别医疗者。\n\n【官网】apicha.org"
+    },
+    "tags": [
+      {
+        "t": {
+          "en": "🏥 Health",
+          "zh": "🏥 醫療",
+          "zh-cn": "🏥 医疗"
+        },
+        "c": "ct-news"
+      },
+      {
+        "t": {
+          "en": "🌈 Community",
+          "zh": "🌈 社群",
+          "zh-cn": "🌈 社群"
+        },
+        "c": "ct-free"
+      },
+      {
+        "t": {
+          "en": "🇺🇸 NYC",
+          "zh": "🇺🇸 紐約",
+          "zh-cn": "🇺🇸 纽约"
+        },
+        "c": "ct-us"
+      }
+    ],
+    "color": "var(--glass-green)",
+    "url": "https://www.apicha.org",
+    "sub": "community"
+  },
+  {
+    "id": 900106,
+    "cat": "emergency",
+    "country": "tw",
+    "date": "2026-06-12",
+    "urgent": false,
+    "evergreen": true,
+    "source": {
+      "en": "Taiwan Tongzhi Hotline Association",
+      "zh": "台灣同志諮詢熱線",
+      "zh-cn": "台湾同志咨询热线"
+    },
+    "title": {
+      "en": "Taiwan Tongzhi (LGBTQ+) Hotline Association",
+      "zh": "台灣同志諮詢熱線協會",
+      "zh-cn": "台湾同志咨询热线协会"
+    },
+    "summary": {
+      "en": "Founded in 1998, Taiwan's oldest and first legally registered LGBTQ+ organization.",
+      "zh": "成立於 1998 年，台灣歷史最悠久、第一個立案的同志組織。",
+      "zh-cn": "成立于 1998 年，台湾历史最悠久、第一个立案的同志组织。"
+    },
+    "full": {
+      "en": "[Main services] A nonprofit offering phone counseling, services for LGBTQ+ parents and families, community gatherings for various groups (elders, youth, lesbians, trans people), gender and HIV-prevention education, intimate-partner-violence support, anonymous testing, and policy advocacy. Counseling line 02-2392-1970 (7–10pm, closed Tue/Wed).\n\n[Who it's for] Taiwan's LGBTQ+ community and their families; served in Chinese.\n\n[Website] hotline.org.tw",
+      "zh": "【主要服務】非營利機構，提供電話諮詢、同志父母與家庭服務、各族群（老年、青少年、女同志、跨性別等）社群聚會、性別與愛滋防治教育、同志親密暴力協助、匿名篩檢及政策倡導。諮詢專線 02-2392-1970（晚 7–10 點，週二、三休息）。\n\n【適合誰】台灣的同志社群及其家人；以中文服務。\n\n【官網】hotline.org.tw",
+      "zh-cn": "【主要服务】非营利机构，提供电话咨询、同志父母与家庭服务、各族群（老年、青少年、女同志、跨性别等）社群聚会、性别与艾滋防治教育、同志亲密暴力协助、匿名筛检及政策倡导。咨询专线 02-2392-1970（晚 7–10 点，周二、三休息）。\n\n【适合谁】台湾的同志社群及其家人；以中文服务。\n\n【官网】hotline.org.tw"
+    },
+    "tags": [
+      {
+        "t": {
+          "en": "🌈 Community",
+          "zh": "🌈 社群",
+          "zh-cn": "🌈 社群"
+        },
+        "c": "ct-free"
+      },
+      {
+        "t": {
+          "en": "🇹🇼 Taiwan",
+          "zh": "🇹🇼 台灣",
+          "zh-cn": "🇹🇼 台湾"
+        },
+        "c": "ct-cn"
+      },
+      {
+        "t": {
+          "en": "📞 Hotline",
+          "zh": "📞 熱線",
+          "zh-cn": "📞 热线"
+        },
+        "c": "ct-event"
+      }
+    ],
+    "color": "var(--glass-orange)",
+    "url": "https://hotline.org.tw",
+    "sub": "community"
+  },
+  {
+    "id": 900107,
+    "cat": "emergency",
+    "country": "ca",
+    "date": "2026-06-12",
+    "urgent": false,
+    "evergreen": true,
+    "source": {
+      "en": "Rainbow Railroad",
+      "zh": "彩虹鐵路 Rainbow Railroad",
+      "zh-cn": "彩虹铁路 Rainbow Railroad"
+    },
+    "title": {
+      "en": "Rainbow Railroad",
+      "zh": "彩虹鐵路（Rainbow Railroad）",
+      "zh-cn": "彩虹铁路（Rainbow Railroad）"
+    },
+    "summary": {
+      "en": "A global nonprofit based in Toronto and New York, helping persecuted LGBTQI+ people relocate to safety.",
+      "zh": "總部在多倫多與紐約的全球非營利組織，協助受迫害 LGBTQI+ 人士緊急轉移至安全國家。",
+      "zh-cn": "总部在多伦多与纽约的全球非营利组织，协助受迫害 LGBTQI+ 人士紧急转移至安全国家。"
+    },
+    "full": {
+      "en": "[Main services] Founded in 2006 and inspired by the Underground Railroad, focused on direct rescue and emergency relocation; provides emergency relocation, crisis response, and cash assistance, and has partnerships with the Canadian and US governments for resettlement pathways. Note: cannot relocate individuals under 18.\n\n[Who it's for] People facing life-threatening persecution over orientation/gender identity who need third-country resettlement.\n\n[Website] rainbowrailroad.org",
+      "zh": "【主要服務】成立於 2006 年，靈感源自「地下鐵路」，專注於直接救援與緊急轉移；提供緊急安置、危機應對與現金援助，並與加拿大、美國政府合作建立難民安置通道。注意：不協助 18 歲以下個人。\n\n【適合誰】因性取向／性別認同在原籍國面臨生命威脅、需第三國安置者。\n\n【官網】rainbowrailroad.org",
+      "zh-cn": "【主要服务】成立于 2006 年，灵感源自「地下铁路」，专注于直接救援与紧急转移；提供紧急安置、危机应对与现金援助，并与加拿大、美国政府合作建立难民安置通道。注意：不协助 18 岁以下个人。\n\n【适合谁】因性取向／性别认同在原籍国面临生命威胁、需第三国安置者。\n\n【官网】rainbowrailroad.org"
+    },
+    "tags": [
+      {
+        "t": {
+          "en": "✈️ Relocation",
+          "zh": "✈️ 轉移安置",
+          "zh-cn": "✈️ 转移安置"
+        },
+        "c": "ct-legal"
+      },
+      {
+        "t": {
+          "en": "🌈 Community",
+          "zh": "🌈 社群",
+          "zh-cn": "🌈 社群"
+        },
+        "c": "ct-free"
+      },
+      {
+        "t": {
+          "en": "🇨🇦 Canada",
+          "zh": "🇨🇦 加拿大",
+          "zh-cn": "🇨🇦 加拿大"
+        },
+        "c": "ct-us"
+      }
+    ],
+    "color": "var(--glass-violet)",
+    "url": "https://www.rainbowrailroad.org",
+    "sub": "community"
   }
 ];

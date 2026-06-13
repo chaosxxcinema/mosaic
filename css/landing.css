@@ -274,10 +274,11 @@ body::before {
 .card-region { color:var(--text-dim); text-transform:uppercase; }
 .card-tag {
   margin-left:auto; padding:3px 8px;
-  background:currentColor; /* currentColor=繼承的時代色;不可在本元素設 color,否則背景會變成文字色 */
-  -webkit-text-fill-color:var(--bg); /* 只塗文字、不改變 color 計算值 */
+  /* 時代色加深30%作底+純白粗體字,確保各時代色均達到可讀對比度(社群反饋:對比度過低) */
+  background:color-mix(in srgb, currentColor 70%, #1a1a1a);
+  -webkit-text-fill-color:#fff; /* 只塗文字、不改變 color 計算值,背景仍能繼承時代色 */
   border-radius:2px; font-size:10px;
-  text-transform:uppercase; letter-spacing:.1em; font-weight:500;
+  text-transform:uppercase; letter-spacing:.1em; font-weight:600;
 }
 
 .card-title {
